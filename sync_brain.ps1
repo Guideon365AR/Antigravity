@@ -3,6 +3,10 @@
 
 $BrainPath = "C:\Users\Gustavo\.gemini\antigravity\brain"
 $Timestamp = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
+$LogPath = Join-Path $BrainPath "sync_log.txt"
+
+Start-Transcript -Path $LogPath -Append
+
 
 Write-Host "Iniciando sincronización del Cerebro en: $BrainPath" -ForegroundColor Cyan
 
@@ -34,12 +38,15 @@ if ($Status) {
 
     if ($LASTEXITCODE -eq 0) {
         Write-Host "¡Sincronización completada exitosamente!" -ForegroundColor Green
-    } else {
+    }
+    else {
         Write-Host "Error al subir los cambios." -ForegroundColor Red
     }
-} else {
+}
+else {
     Write-Host "No hay cambios locales para subir." -ForegroundColor Green
 }
 
 Write-Host "Proceso finalizado."
 Start-Sleep -Seconds 3
+Stop-Transcript
