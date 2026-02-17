@@ -1,0 +1,5 @@
+{
+  "artifactType": "ARTIFACT_TYPE_IMPLEMENTATION_PLAN",
+  "summary": "Clone GECEM website using Vite + React + TailwindCSS.\n- Replicate Landing Page (Hero, About, Team, Activities, Contact).\n- Replicate 6 Subpages (Reuniones, Proyectos, Entrevistas, Recursos, Casos, Capacitaciones).\n- Use Lucide React for icons.\n- Use Tailwind for styling (exact classes extracted).",
+  "updatedAt": "2026-01-31T14:47:59.361354600Z"
+}

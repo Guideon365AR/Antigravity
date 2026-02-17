@@ -1,0 +1,20 @@
+# Tareas de Migración a Rails 8
+
+- [ ] **Fase 1: Análisis y Preparación**
+    - [ ] Auditar estructura actual del proyecto <!-- id: 0 -->
+    - [ ] Identificar modelos y lógica de negocio core (`Intervention`, `Truck`, `RedisClient`) <!-- id: 1 -->
+    - [ ] Verificar entorno local (Ruby/Rails versiones) <!-- id: 2 -->
+
+- [ ] **Fase 2: Inicialización del Nuevo Proyecto**
+    - [ ] Definir estrategia de directorios (Legacy vs New) <!-- id: 3 -->
+    - [ ] Crear nueva app Rails 8 (`rails new`) <!-- id: 4 -->
+    - [ ] Configurar base de datos (PostgreSQL) <!-- id: 5 -->
+
+- [ ] **Fase 3: Migración de Datos y Lógica**
+    - [ ] Migrar esquema de base de datos (`schema.rb` o migraciones) <!-- id: 6 -->
+    - [ ] Portar modelos principales y tests unitarios <!-- id: 7 -->
+    - [ ] Portar servicios (Redis, impresión) <!-- id: 8 -->
+
+- [ ] **Fase 4: Interfaz y Controladores**
+    - [ ] Recrear controladores básicos <!-- id: 9 -->
+    - [ ] Implementar nuevas vistas (Hotwire/Turbo recomendado) <!-- id: 10 -->

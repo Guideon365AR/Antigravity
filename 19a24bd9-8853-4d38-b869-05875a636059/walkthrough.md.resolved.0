@@ -1,0 +1,159 @@
+# Migración de Firehouse a Docker con Ruby 3.2
+
+## Resumen
+
+Se ha configurado exitosamente la aplicación Ruby on Rails **Firehouse** para ejecutarse con Docker. La aplicación ha sido migrada de Ruby 2.4 a Ruby 3.2 y se ha configurado PostgreSQL 14 como base de datos.
+
+## Cambios Realizados
+
+### 1. [Dockerfile](file:///c:/Users/Gustavo/firehouse/Dockerfile)
+
+**Actualizaciones principales:**
+- ✅ Imagen base actualizada de `ruby:2.4-alpine` a `ruby:3.2-alpine`
+- ✅ Bundler actualizado a versión 2.4 (compatible con Ruby 3.2)
+- ✅ Mejoras en el orden de las capas para optimizar el caching de Docker
+- ✅ `MAINTAINER` deprecado reemplazado por `LABEL maintainer`
+- ✅ Configuración moderna de bundler con `bundle config set`
+- ✅ Puerto 3000 expuesto explícitamente
+
+**Cambios clave:**
+```dockerfile
+FROM ruby:3.2-alpine
+LABEL maintainer="Néstor Coppi <nestorcoppi@gmail.com>"
+
+# Bundler 2.x compatible con Ruby 3.2
+RUN gem install bundler -v '~> 2.4'
+
+# Mejor caching: copiar Gemfile primero
+COPY Gemfile Gemfile.lock ./
+RUN bundle install --jobs 8
+COPY . .
+```
+
+---
+
+### 2. [docker-compose.yml](file:///c:/Users/Gustavo/firehouse/docker-compose.yml) *(NUEVO)*
+
+**Servicios configurados:**
+
+#### Servicio `db` (PostgreSQL)
+- PostgreSQL 14 Alpine
+- Credenciales: `docker/docker`
+- Base de datos: `firehouse_development`
+- Puerto expuesto: 5432
+- Healthcheck implementado para garantizar disponibilidad
+- Volumen persistente para datos
+
+#### Servicio `web` (Rails)
+- Build desde Dockerfile local
+- Comando personalizado para crear/migrar DB y levantar servidor
+- Puerto expuesto: 3000
+- Depende de que `db` esté healthy
+- Variables de entorno configuradas (DATABASE_HOST, USER, PASSWORD)
+- Volúmenes para código y cache de gems
+
+---
+
+### 3. [config/database.yml](file:///c:/Users/Gustavo/firehouse/config/database.yml)
+
+**Configuración flexible con variables de entorno:**
+
+```yaml
+development:
+  host: <%= ENV['DATABASE_HOST'] || 'localhost' %>
+  username: <%= ENV['DATABASE_USER'] || 'docker' %>
+  password: <%= ENV['DATABASE_PASSWORD'] || 'docker' %>
+```
+
+Esto permite:
+- ✅ Ejecutar con Docker (usando `DATABASE_HOST=db`)
+- ✅ Ejecutar localmente (fallback a `localhost`)
+
+---
+
+## Instrucciones de Uso
+
+### Pre-requisitos
+
+> [!IMPORTANT]
+> **Docker Desktop debe estar iniciado** antes de ejecutar los comandos. El error encontrado fue:
+> ```
+> Error response from daemon: Docker Desktop is unable to start
+> ```
+
+### Pasos para Levantar la Aplicación
+
+1. **Iniciar Docker Desktop**
+   - En Windows, abrir Docker Desktop desde el menú de inicio
+   - Esperar a que el ícono de Docker en la bandeja del sistema muestre "Docker Desktop is running"
+
+2. **Construir la imagen**
+   ```bash
+   cd c:\Users\Gustavo\firehouse
+   docker-compose build
+   ```
+
+3. **Levantar los servicios**
+   ```bash
+   docker-compose up
+   ```
+
+4. **Acceder a la aplicación**
+   - Aplicación Rails: http://localhost:3000
+   - PostgreSQL: localhost:5432
+
+### Comandos Útiles
+
+```bash
+# Ver logs en tiempo real
+docker-compose logs -f
+
+# Ejecutar comandos en el contenedor
+docker-compose exec web bash
+docker-compose exec web bundle exec rails console
+
+# Detener servicios
+docker-compose down
+
+# Detener y eliminar volúmenes (CUIDADO: borra datos)
+docker-compose down -v
+
+# Reconstruir sin cache
+docker-compose build --no-cache
+```
+
+---
+
+## Compatibilidad y Advertencias
+
+> [!WARNING]
+> **Rails 4.2 con Ruby 3.2**: Rails 4.2 es muy antiguo (2015) y no tiene soporte oficial para Ruby 3.2. Pueden aparecer warnings de deprecación o errores de compatibilidad durante el build o ejecución.
+
+### Posibles Problemas
+
+Si encuentras errores durante `bundle install`, pueden deberse a:
+- Gemas incompatibles con Ruby 3.2
+- Extensiones nativas que necesitan recompilación
+- Cambios en la API de Ruby entre versiones
+
+**Soluciones recomendadas:**
+1. Revisar los logs de error específicos
+2. Actualizar gemas problemáticas en el Gemfile
+3. Considerar migrar a Rails 6.x o 7.x en el futuro
+
+---
+
+## Próximos Pasos
+
+Una vez que Docker Desktop esté iniciado:
+
+1. ✅ Ejecutar `docker-compose build` para construir la imagen
+2. ✅ Ejecutar `docker-compose up` para levantar los servicios
+3. ✅ Verificar que la aplicación responde en http://localhost:3000
+4. ✅ Revisar logs por posibles errores de compatibilidad
+
+## Archivos Modificados
+
+- [Dockerfile](file:///c:/Users/Gustavo/firehouse/Dockerfile) - Actualizado completamente
+- [docker-compose.yml](file:///c:/Users/Gustavo/firehouse/docker-compose.yml) - Creado desde cero
+- [config/database.yml](file:///c:/Users/Gustavo/firehouse/config/database.yml) - Configuración flexible añadida

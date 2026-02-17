@@ -1,0 +1,5 @@
+{
+  "artifactType": "ARTIFACT_TYPE_TASK",
+  "summary": "Checklist de tareas para configurar Docker en la aplicación Firehouse, migrando de Ruby 2.4 a Ruby 3.2 y configurando PostgreSQL",
+  "updatedAt": "2026-01-21T22:07:26.388001700Z"
+}

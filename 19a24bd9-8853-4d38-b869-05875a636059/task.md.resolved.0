@@ -1,0 +1,10 @@
+# Configuración de Docker para Firehouse
+
+## Tareas
+
+- [ ] Analizar el repositorio y dependencias actuales
+- [ ] Actualizar Dockerfile para Ruby 3.2
+- [ ] Crear docker-compose.yml con PostgreSQL
+- [ ] Actualizar configuración de base de datos
+- [ ] Intentar ejecutar el build con Docker
+- [ ] Verificar que la aplicación funciona correctamente

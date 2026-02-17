@@ -1,0 +1,20 @@
+# Implementation Plan - Replace Website Icon
+
+I will replace the current website icon (`vite.svg`) with the image provided by the user.
+
+## Proposed Changes
+
+### Root Directory
+#### [NEW] [public/icon.png](file:///c:/Users/Gustavo/Desktop/Sitio%20Gecem/viejo-gecem/public/icon.png)
+- Create a `public` directory if it doesn't exist.
+- Copy the user's uploaded image to `public/icon.png`.
+
+#### [MODIFY] [index.html](file:///c:/Users/Gustavo/Desktop/Sitio%20Gecem/viejo-gecem/index.html)
+- Update the `<link rel="icon">` tag to point to `/icon.png`.
+- Change the type attribute to `image/png`.
+
+## Verification Plan
+
+### Manual Verification
+- I will check [index.html](file:///c:/Users/Gustavo/Desktop/Sitio%20Gecem/viejo-gecem/index.html) to ensure the link tag is updated correctly.
+- I will verify the file `public/icon.png` exists.

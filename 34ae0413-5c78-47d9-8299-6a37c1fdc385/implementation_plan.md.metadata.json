@@ -1,0 +1,6 @@
+{
+  "artifactType": "ARTIFACT_TYPE_IMPLEMENTATION_PLAN",
+  "summary": "Plan técnico para migrar a Rails 8 sin Ruby local, usando Docker como entorno de desarrollo y ejecución desde el inicio.",
+  "updatedAt": "2026-01-27T23:20:42.619117700Z",
+  "version": "1"
+}

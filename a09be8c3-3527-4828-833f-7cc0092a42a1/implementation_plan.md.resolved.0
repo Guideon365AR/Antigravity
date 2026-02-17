@@ -1,0 +1,29 @@
+# Plan de Verificación de Implementación Docker
+
+He analizado los archivos de configuración actuales y parece que la estructura básica para dockerizar la aplicación Rails 4.2 con Ruby 2.7 está lista.
+
+## Objetivo
+Validar que la configuración actual permita construir la imagen y levantar los servicios sin errores.
+
+## Cambios Propuestos
+No se realizarán cambios de código inmediatos hasta ejecutar la verificación. Es probable que surjan errores relacionados con:
+- Compatibilidad de gemas con Ruby 2.7 (especialmente `nokogiri`, `pg`, `sassc`).
+- Conexión con PostgreSQL 14 (protocolos de autenticación antiguos vs nuevos).
+- Permisos del script `start.sh`.
+
+Si surgen errores, se modificarán los archivos pertinentes ([Dockerfile](file:///c:/Users/Gustavo/firehouse/Dockerfile), [Gemfile](file:///c:/Users/Gustavo/firehouse/Gemfile), `config/*`).
+
+## Plan de Verificación
+
+### Pruebas Automatizadas
+Ejecutaré el siguiente comando para construir y levantar los contenedores:
+
+```powershell
+docker-compose up --build
+```
+
+### Verificación Manual
+1. Observar los logs para detectar errores durante `bundle install` o migraciones de base de datos.
+2. Si los contenedores inician correctamente, intentar acceder a:
+   - Web: `http://localhost:3000`
+3. Verificar la creación de la base de datos y tablas.

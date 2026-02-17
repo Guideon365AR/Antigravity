@@ -1,0 +1,6 @@
+{
+  "artifactType": "ARTIFACT_TYPE_TASK",
+  "summary": "Checklist para la migración a Rails 8 utilizando Docker para la generación del proyecto, dado que no hay Ruby local.",
+  "updatedAt": "2026-01-27T23:20:40.062382700Z",
+  "version": "1"
+}

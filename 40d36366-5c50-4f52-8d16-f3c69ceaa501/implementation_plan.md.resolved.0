@@ -1,0 +1,40 @@
+# Implementation Plan - Environment Synchronization
+
+We will synchronize the Antigravity environment settings and Agent "Brain" (Tasks/Chat History) between computers using Google Drive.
+
+## User Review Required
+> [!IMPORTANT]
+> **Google Drive Location**: I need to confirm the exact location of your Google Drive folder to create the symbolic links. I will attempt to locate it, but if I cannot, I will ask for the path.
+> **Symlink Creation**: Creating symbolic links requires knowing the target destination in your cloud storage.
+
+## Proposed Changes
+
+### Settings Optimization
+We will update [settings.json](file:///C:/Users/Gustavo/AppData/Roaming/Antigravity/User/settings.json) to include standard settings for synchronization and a consistent interface.
+
+#### [MODIFY] [settings.json](file:///C:/Users/Gustavo/AppData/Roaming/Antigravity/User/settings.json)
+- Add distinct visual customizations (title bar color) to identify the machine.
+- Enable `files.autoSave`.
+- Configure basic editor settings (font, tab size) for consistency.
+
+### Data Synchronization (The "Brain")
+We will link the local "Brain" directory to Google Drive.
+
+#### [NEW] Symlink Creation Script
+- A PowerShell script to:
+    1. Backup existing `brain` folder.
+    2. Move `brain` content to Google Drive (if not already there) or rename local folder.
+    3. Create a Symlink `C:\Users\Gustavo\.gemini\antigravity\brain` -> `[Google Drive Path]\Antigravity\brain`.
+
+### Application State & Extensions
+- Recommendation: Use the "Project Manager" extension for persistent project states.
+- Suggest "Settings Sync" (if available) or manual file backup of `settings.json` to Drive.
+
+## Verification Plan
+
+### Manual Verification
+- **Settings**: Open Antigravity on the second machine (once synced) and verify the theme/settings match.
+- **Data**:
+    1. Create a dummy task/file in the `brain` folder on this machine.
+    2. Verify it appears in the Google Drive folder.
+    3. (User action) Verify it appears on the second machine's `brain` folder.

@@ -1,0 +1,44 @@
+# Implementation Plan - Environment Synchronization
+
+We will synchronize the Antigravity environment settings and Agent "Brain" (Tasks/Chat History) between computers using Google Drive.
+
+## User Review Required
+> [!IMPORTANT]
+> **Google Drive Location**: I could not automatically locate your Google Drive folder. Please provide the absolute path (e.g., `G:\My Drive` or `C:\Users\Gustavo\Google Drive`).
+> **Sync Method**: Since native "Settings Sync" is not active, we will use a file-based approach (Symlinks) to keep [settings.json](file:///C:/Users/Gustavo/AppData/Roaming/Antigravity/User/settings.json) and your "Brain" in sync.
+
+## Proposed Changes
+
+### Settings Optimization
+We will create a standardized [settings.json](file:///C:/Users/Gustavo/AppData/Roaming/Antigravity/User/settings.json) optimized for synchronization.
+
+#### [MODIFY] [settings.json](file:///C:/Users/Gustavo/AppData/Roaming/Antigravity/User/settings.json)
+- **Visual Customization**: Add distinct title bar colors to identify the machine.
+- **Editor Consistency**:
+    - `files.autoSave`: `afterDelay`
+    - `editor.formatOnSave`: `true`
+    - `editor.tabSize`: 4
+    - `files.trimTrailingWhitespace`: `true`
+- **Sync Preparation**: Ensure paths in settings are relative or use environment variables where possible.
+
+### Data Synchronization (The "Brain")
+We will link the local "Brain" directory to Google Drive.
+
+#### [NEW] Symlink Creation Script (PowerShell)
+- **Goal**: Redirect `C:\Users\Gustavo\.gemini\antigravity\brain` to `[Your Google Drive Path]\Antigravity\brain`.
+- **Steps**:
+    1.  Check if `[Drive Path]\Antigravity\brain` exists.
+    2.  If yes, back up local brain and create symlink to Drive.
+    3.  If no, move local brain to Drive and create symlink back.
+
+### Persistence & Extensions
+- **Recommendation**: Install **"Project Manager"** extension.
+    - *Why*: It saves your projects (folders/workspaces) in a `projects.json` file which can also be synced via the same method.
+- **Alternative**: Use a portable `data` directory approach if Antigravity supports it (advanced).
+
+## Verification Plan
+
+### Manual Verification
+1.  **Check Symlink**: Verify that creating a file in `.gemini\antigravity\brain` instantly appears in the Google Drive folder.
+2.  **Check Settings**: Restart Antigravity and confirm the new settings (e.g., color theme) are applied.
+3.  **Cross-Device Check**: (User Action) On your second PC, you will need to point its brain folder to the same Google Drive location.

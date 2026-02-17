@@ -1,0 +1,7 @@
+# Task: Clone https://gecem.netlify.app/
+
+- [ ] Analyze target website structure and assets <!-- id: 0 -->
+- [ ] Initialize project with Vite + React <!-- id: 1 -->
+- [ ] Implement global styles and layout <!-- id: 2 -->
+- [ ] Implement home page components <!-- id: 3 -->
+- [ ] Verify methodology and aesthetics <!-- id: 4 -->

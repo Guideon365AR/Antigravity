@@ -1,0 +1,17 @@
+# Deployment to Cloud (Railway/Render)
+
+- [ ] Analyze current project configuration <!-- id: 0 -->
+    - [ ] Check `Dockerfile` <!-- id: 1 -->
+    - [ ] Check `docker-compose.yml` <!-- id: 2 -->
+    - [ ] Check [config/database.yml](file:///c:/Users/Gustavo/firehouse/config/database.yml) <!-- id: 3 -->
+    - [ ] Check [config/environments/production.rb](file:///c:/Users/Gustavo/firehouse/config/environments/production.rb) <!-- id: 4 -->
+    - [ ] Check `Gemfile` for production gems (e.g., `pg`) <!-- id: 5 -->
+- [ ] Prepare application for production <!-- id: 6 -->
+    - [ ] Create/Update `implementation_plan.md` <!-- id: 7 -->
+    - [ ] Ensure `database.yml` uses `DATABASE_URL` in production <!-- id: 8 -->
+    - [ ] Configure `RAILS_LOG_TO_STDOUT` environment variable handling <!-- id: 9 -->
+    - [ ] Ensure `secret_key_base` is handled via env var <!-- id: 10 -->
+    - [ ] Verify Dockerfile is suitable for production (multi-stage ideally, or at least optimized) <!-- id: 11 -->
+- [ ] Create Deployment Walkthrough <!-- id: 12 -->
+    - [ ] Write step-by-step guide for Railway/Render connection <!-- id: 13 -->
+- [ ] Finalize and User Handoff <!-- id: 14 -->

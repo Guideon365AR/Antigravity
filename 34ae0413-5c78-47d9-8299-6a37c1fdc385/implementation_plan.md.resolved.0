@@ -1,0 +1,44 @@
+# Plan de Migración: Firehouse a Rails 8
+
+## Objetivo
+Modernizar la aplicación "Firehouse" migrando de Rails 4.2 (Ruby antiguo) a **Rails 8 (Ruby moderno)** para resolver problemas de dependencias, mejorar la seguridad y facilitar el despliegue.
+
+## User Review Required
+> [!IMPORTANT]
+> **Estrategia de Directorios**: Se propone renombrar la carpeta actual a `firehouse-legacy` y crear una carpeta nueva `firehouse` para el proyecto Rails 8. Esto previene conflictos y mantiene el código viejo accesible para referencia.
+>
+> **Requisitos Previos**: Necesitamos confirmar si tienes Ruby 3.x instalado en Windows o si preferimos usar Dev Containers (Docker) para el desarrollo de la nueva app.
+
+## Proposed Changes
+
+### 1. Preparación del Entorno
+- Renombrar `c:\Users\Gustavo\firehouse` a `c:\Users\Gustavo\firehouse-legacy`.
+- Crear nuevo directorio raíz `c:\Users\Gustavo\firehouse`.
+- Generar nueva app Rails 8.
+
+### 2. Migración de Base de Datos
+- Copiar la estructura de la base de datos (`schema.rb` legacy) y adaptarla a migraciones modernas.
+- Asegurar que PostgreSQL esté configurado en `config/database.yml`.
+
+### 3. Portabilidad de Lógica (Core)
+Se priorizará la lógica de negocio que no depende de la UI:
+- **Modelos**: `Intervention`, `Truck`, etc. (Copiar y ajustar sintaxis Ruby 3).
+- **Servicios**: Clientes de Redis, lógica de hardware.
+
+#### [NEW] Estructura Rails 8
+- `app/models/` (Portados)
+- `app/services/` (Nueva ubicación para lógica compleja)
+
+### 4. Interfaz de Usuario
+- Reconstruir vistas usando los estándares de Rails 8 (Turbo/Stimulus).
+- Evitar gemas de UI antiguas/obsoletas.
+
+## Verification Plan
+
+### Automated Tests
+- Ejecutar `bin/rails test` en la nueva app para cada modelo portado.
+- Verificar conexión a BD y Redis.
+
+### Manual Verification
+- Levantar servidor `bin/dev`.
+- Comprobar funcionamiento básico en navegador.

@@ -1,0 +1,49 @@
+# Implementation Plan - Environment Synchronization
+
+We will synchronize Antigravity with "Drive on the Web" as requested.
+Since the user wants a "Web" link and we are missing a local Drive folder, the best approach is to instal **Google Drive for Desktop (Streaming Mode)**. This "links" the PC to the web without downloading everything, creating a virtual G: drive that we can then use for our "Brain" sync.
+
+For settings, we investigated [userDataSync.log](file:///C:/Users/Gustavo/AppData/Roaming/Antigravity/logs/20260216T180632/userDataSync.log) and found activity. We will optimize [settings.json](file:///C:/Users/Gustavo/AppData/Roaming/Antigravity/User/settings.json) and ensure it's being captured.
+
+## User Review Required
+> [!NOTE]
+> **"Link to Web" Strategy**: Truly linking local files to the web requires a bridge. **Google Drive for Desktop** in *Stream files* mode is the perfect solution. It mounts your cloud storage as a virtual drive (G:), allowing instant sync without using up local disk space.
+> **Settings Sync**: I found logs indicating the built-in Sync is active. I will inspect them to confirm what is being backed up.
+
+## Proposed Changes
+
+### Settings Optimization
+We will create a standardized [settings.json](file:///C:/Users/Gustavo/AppData/Roaming/Antigravity/User/settings.json) optimized for synchronization.
+
+#### [MODIFY] [settings.json](file:///C:/Users/Gustavo/AppData/Roaming/Antigravity/User/settings.json)
+- **Visual Customization**: Add distinct title bar colors to identify the machine.
+- **Editor Consistency**:
+    - `files.autoSave`: `afterDelay`
+    - `editor.formatOnSave`: `true`
+    - `editor.tabSize`: 4
+    - `files.trimTrailingWhitespace`: `true`
+- **Sync Preparation**: Ensure paths in settings are relative or use environment variables where possible.
+
+### Data Synchronization (The "Brain")
+We will link the local "Brain" directory to Google Drive.
+
+#### [NEW] Symlink Creation (Once Drive is Linked)
+- **Prerequisite**: Google Drive for Desktop installed and running (G: drive active).
+- **Action**: Create Symlink `C:\Users\Gustavo\.gemini\antigravity\brain` <-> `G:\My Drive\Antigravity\brain`.
+
+### Application State
+- I found **`unchase.antigravity-storage-manager`** extension installed.
+    - Check if this is being used to sync to a cloud provider? (Likely local/network storage).
+    - Recommendation: Stick to the Brain-to-Drive symlink for simplicity and robustness.
+
+### Persistence & Extensions
+- **Recommendation**: Install **"Project Manager"** extension.
+    - *Why*: It saves your projects (folders/workspaces) in a `projects.json` file which can also be synced via the same method.
+- **Alternative**: Use a portable `data` directory approach if Antigravity supports it (advanced).
+
+## Verification Plan
+
+### Manual Verification
+1.  **Check Symlink**: Verify that creating a file in `.gemini\antigravity\brain` instantly appears in the Google Drive folder.
+2.  **Check Settings**: Restart Antigravity and confirm the new settings (e.g., color theme) are applied.
+3.  **Cross-Device Check**: (User Action) On your second PC, you will need to point its brain folder to the same Google Drive location.

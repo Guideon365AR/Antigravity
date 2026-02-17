@@ -1,0 +1,5 @@
+{
+  "artifactType": "ARTIFACT_TYPE_IMPLEMENTATION_PLAN",
+  "summary": "Plan detallado para actualizar Dockerfile a Ruby 3.2 y crear docker-compose.yml con PostgreSQL, incluyendo advertencias sobre compatibilidad de Rails 4.2",
+  "updatedAt": "2026-01-21T22:07:26.392258200Z"
+}

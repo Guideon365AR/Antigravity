@@ -1,0 +1,6 @@
+# Tareas
+
+- [ ] Analizar el estado actual del proyecto <!-- id: 0 -->
+    - [ ] Revisar Dockerfile y docker-compose.yml 
+    - [ ] Revisar configuración de base de datos y gemas
+    - [ ] Verificar estado de la aplicación

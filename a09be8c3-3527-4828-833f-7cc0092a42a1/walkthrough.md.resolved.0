@@ -1,0 +1,28 @@
+# Verificación de Implementación Docker para Firehouse
+
+El proceso de verificación ha sido exitoso. La aplicación Rails 4.2 se ha construido y ejecutado correctamente utilizando Ruby 2.7 y PostgreSQL 14.
+
+## Resultados de Verificación
+
+### 1. Construcción (Build)
+- [x] `docker-compose build` completado sin errores.
+- [x] Instalación de gemas exitosa (incluyendo `nokogiri` y parche para `devise`).
+
+### 2. Ejecución (Runtime)
+- [x] Contenedores levantados exitosamente.
+- [x] Conexión a base de datos verificada (`firehouse_development already exists`).
+- [x] Servidor web iniciado (`Listening on 0.0.0.0:3000`).
+
+## Próximos Pasos
+Puedes acceder a la aplicación en tu navegador:
+[http://localhost:3000](http://localhost:3000)
+
+> [!NOTE]
+> La primera carga puede ser lenta mientras Rails compila los assets.
+
+## Comandos Útiles
+
+- **Iniciar servicios**: `docker-compose up`
+- **Detener servicios**: `docker-compose down`
+- **Reiniciar servidor**: `docker-compose restart web`
+- **Ver logs**: `docker-compose logs -f web`

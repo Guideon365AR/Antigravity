@@ -1,0 +1,17 @@
+# Deployment to Cloud (Railway/Render)
+
+- [x] Analyze current project configuration <!-- id: 0 -->
+    - [x] Check [Dockerfile](file:///c:/Users/Gustavo/firehouse/Dockerfile) <!-- id: 1 -->
+    - [x] Check [docker-compose.yml](file:///c:/Users/Gustavo/firehouse/docker-compose.yml) <!-- id: 2 -->
+    - [x] Check [config/database.yml](file:///c:/Users/Gustavo/firehouse/config/database.yml) <!-- id: 3 -->
+    - [x] Check [config/environments/production.rb](file:///c:/Users/Gustavo/firehouse/config/environments/production.rb) <!-- id: 4 -->
+    - [x] Check [Gemfile](file:///c:/Users/Gustavo/firehouse/Gemfile) for production gems (e.g., `pg`) <!-- id: 5 -->
+- [x] Prepare application for production <!-- id: 6 -->
+    - [x] Create/Update [implementation_plan.md](file:///c:/Users/Gustavo/.gemini/antigravity/brain/4d359c17-8e2b-4f04-9a87-8df061c0b9b5/implementation_plan.md) <!-- id: 7 -->
+    - [x] Ensure [database.yml](file:///c:/Users/Gustavo/firehouse/config/database.yml) uses `DATABASE_URL` in production <!-- id: 8 -->
+    - [x] Configure `RAILS_LOG_TO_STDOUT` environment variable handling <!-- id: 9 -->
+    - [x] Ensure `secret_key_base` is handled via env var <!-- id: 10 -->
+    - [x] Verify Dockerfile is suitable for production (multi-stage ideally, or at least optimized) <!-- id: 11 -->
+- [x] Create Deployment Walkthrough <!-- id: 12 -->
+    - [x] Write step-by-step guide for Railway/Render connection <!-- id: 13 -->
+- [ ] Finalize and User Handoff <!-- id: 14 -->

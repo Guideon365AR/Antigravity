@@ -1,0 +1,24 @@
+# Issue Diagnosis: Page Not Loading
+
+## Problem
+The user reported "no carga la pagina".
+Upon investigation:
+1.  `docker-compose ps` showed the `web` container was exiting with status 1.
+2.  `docker-compose logs web` revealed the error: `A server is already running. Check /firehouse/tmp/pids/server.pid.`
+3.  This occurs when the server crashes or is stopped abruptly, leaving the PID file behind, preventing a restart.
+4.  Logs also showed deprecation warnings regarding [.css.scss](file:///c:/Users/Gustavo/firehouse/app/assets/stylesheets/pdf.css.scss) files and a potential hang on `byebug` (though `byebug` was found to be commented out in the current file).
+
+## Solution
+1.  **Automatic PID Cleanup**: Modified [docker-compose.yml](file:///c:/Users/Gustavo/firehouse/docker-compose.yml) to remove [tmp/pids/server.pid](file:///c:/Users/Gustavo/firehouse/tmp/pids/server.pid) before starting the Rails server.
+    ```yaml
+    command: bash -c "rm -f tmp/pids/server.pid && bundle exec rake db:create db:migrate && bundle exec rails server -b 0.0.0.0"
+    ```
+2.  **Deprecation Fixes**: Renamed all `*.css.scss` files to `*.scss` in `app/assets/stylesheets/` to suppress irrelevant warnings and clean up logs.
+
+## Verification
+- Restarted the containers using `docker-compose up -d web`.
+- Verified the `web` container is running and healthy.
+- Confirmed the page loads at `http://localhost:3000` (initially slow due to asset compilation, but successful).
+
+## Next Steps
+The application is now accessible. The user can proceed with using or testing the app.

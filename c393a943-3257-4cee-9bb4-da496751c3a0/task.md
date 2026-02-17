@@ -1,0 +1,4 @@
+- [ ] Check current Ruby installation <!-- id: 0 -->
+- [ ] Determine required Ruby version from Dockerfile <!-- id: 1 -->
+- [ ] Install Ruby <!-- id: 2 -->
+- [ ] Verify installation <!-- id: 3 -->

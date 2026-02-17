@@ -1,0 +1,161 @@
+# Migración de Firehouse a Docker
+
+## Resumen
+
+Se ha configurado la aplicación Ruby on Rails **Firehouse** para ejecutarse con Docker. Durante el proceso se descubrió un **conflicto de compatibilidad crítico** entre Rails 4.2 y Ruby 3.2.
+
+## Problema de Compatibilidad Descubierto
+
+> [!CAUTION]
+> **Rails 4.2 no es compatible con Ruby 3.2**
+>
+> - Rails 4.2 requiere Bundler \u003c 2.0
+> - Bundler 1.x usa el método `untaint` eliminado en Ruby 3.0+
+> - **Resultado**: Imposible usar Rails 4.2 con Ruby 3.2
+
+### Solución Implementada
+
+**Usar Ruby 2.7** - La máxima versión de Ruby oficialmente compatible con Rails 4.2:
+- ✅ Ruby 2.7 soporta Bundler 1.17.3
+- ✅ Rails 4.2 funciona correctamente con Ruby 2.7  
+- ✅ Todas las gemas existentes son compatibles
+
+---
+
+## Cambios Realizados
+
+### 1. [Dockerfile](file:///c:/Users/Gustavo/firehouse/Dockerfile)
+
+**Configuración final:**
+- Imagen base: `ruby:2.7-alpine` (en lugar de 3.2)
+- Bundler: `1.17.3` (compatible con Rails 4.2)
+- PostgreSQL dev libraries incluidas
+- Optimizado para caching de Docker
+
+**Estructura:**
+```dockerfile
+FROM ruby:2.7-alpine
+
+# Dependencias del sistema
+RUN apk add build-dependencies postgresql-dev nodejs imagemagick...
+
+# Bundler 1.17.3
+RUN gem install bundler -v '1.17.3'
+
+# Instalar gemas
+COPY Gemfile Gemfile.lock ./
+RUN bundle install --deployment --jobs 8
+```
+
+---
+
+### 2. [docker-compose.yml](file:///c:/Users/Gustavo/firehouse/docker-compose.yml) *(NUEVO)*
+
+**Servicios configurados:**
+
+#### Servicio `db` (PostgreSQL)
+- PostgreSQL 14 Alpine
+- Credenciales: `docker/docker`
+- Base de datos: `firehouse_development`
+- Puerto: 5432
+- Healthcheck implementado
+- Volumen persistente
+
+#### Servicio `web` (Rails)
+- Build desde Dockerfile local
+- Comando: Crear DB, migrar y levantar servidor Rails
+- Puerto: 3000  
+- Variables de entorno para conexión a DB
+- Volúmenes para código y cache de gems
+
+---
+
+### 3. [config/database.yml](file:///c:/Users/Gustavo/firehouse/config/database.yml)
+
+Configuración con variables de entorno:
+
+```yaml
+development:
+  host: <%= ENV['DATABASE_HOST'] || 'localhost' %>
+  username: <%= ENV['DATABASE_USER'] || 'docker' %>
+  password: <%= ENV['DATABASE_PASSWORD'] || 'docker' %>
+```
+
+Permite ejecutar tanto en Docker como localmente.
+
+---
+
+## Instrucciones de Uso
+
+### Pre-requisitos
+
+> [!IMPORTANT]
+> **Docker Desktop debe estar corriendo** antes de ejecutar los comandos.
+
+### Comandos
+
+```bash
+# Navegar al directorio
+cd c:\Users\Gustavo\firehouse
+
+# Construir la imagen
+docker-compose build
+
+# Levantar los servicios
+docker-compose up
+
+# Acceder a la aplicación
+# → http://localhost:3000
+```
+
+### Comandos Útiles
+
+```bash
+# Ver logs
+docker-compose logs -f web
+
+# Ejecutar comandos en el contenedor
+docker-compose exec web bash
+docker-compose exec web bundle exec rails console
+
+# Detener servicios
+docker-compose down
+
+# Reconstruir desde cero
+docker-compose build --no-cache
+```
+
+---
+
+## Opciones Futuras
+
+Si en el futuro quieres migrar a versiones más modernas de Ruby:
+
+### Opción 1: Actualizar Rails (Recomendado)
+
+Migrar gradualmente:
+- Rails 4.2 → 5.2 (soporta Ruby 2.7)
+- Rails 5.2 → 6.1 (soporta Ruby 3.0)
+- Rails 6.1 → 7.x (soporta Ruby 3.2+)
+
+### Opción 2: Mantener Ruby 2.7
+
+Ruby 2.7 tiene soporte hasta Marzo 2023, pero sigue siendo funcional para aplicaciones legacy:
+- ✅ Estable y probado
+- ✅ Compatible con todas las gemas actuales
+- ⚠️ Sin soporte oficial de seguridad
+
+---
+
+## Archivos Modificados
+
+- [Dockerfile](file:///c:/Users/Gustavo/firehouse/Dockerfile) - Actualizado a Ruby 2.7
+- [docker-compose.yml](file:///c:/Users/Gustavo/firehouse/docker-compose.yml) - Creado
+- [config/database.yml](file:///c:/Users/Gustavo/firehouse/config/database.yml) - Variables de entorno añadidas
+
+## Próximos Pasos
+
+1. ✅ Ejecutar `docker-compose build`
+2. ✅ Ejecutar `docker-compose up`
+3. ✅ Acceder a http://localhost:3000
+4. ✅ Verificar funcionalidad de la aplicación

@@ -1,0 +1,5 @@
+{
+  "artifactType": "ARTIFACT_TYPE_TASK",
+  "summary": "Clone the website https://gecem.netlify.app/\n- Research the target website structure and content.\n- Initialize the project with Vite + React.\n- Implement the design and components.\n- Verify the clone against the original.",
+  "updatedAt": "2026-01-31T14:45:10.454020600Z"
+}

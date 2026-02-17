@@ -1,0 +1,6 @@
+# Task: Push Repository to GitHub
+
+- [ ] Check local git status and configuration <!-- id: 0 -->
+- [ ] Verify GitHub authentication method <!-- id: 1 -->
+- [ ] Create repository on GitHub (if not exists) <!-- id: 2 -->
+- [ ] Push code to GitHub <!-- id: 3 -->
