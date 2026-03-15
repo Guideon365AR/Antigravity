@@ -1,0 +1,142 @@
+<current_dom_explanation>
+This is a temporary snapshot of the current page's DOM structure. The DOM will change if you navigate to or interact with another page. Use a tool like browser_get_dom to capture and preserve the DOM in your trajectory if needed for later reference.
+</current_dom_explanation>
+<current_dom>
+[0] (227,58)<input class='UGojuc fontBodyMedium EmSKud lpggsf ' role='combobox' />
+[1] (373,63)<button aria-label='Búsqueda' class='mL3xi' />
+	[2] (373,60)<span > />
+[3] (423,62)<button aria-label='Cerrar' class='yAuNSb vF7Cdb' />
+	[4] (423,60)<span > />
+[5] (635,62)<div class='rHNip cRLbXd' scrollable='true' />
+	[6] (548,62)<button class='e2moi' />
+		[7] (548,62)<div >
+Restaurantes />
+			[8] (548,62)<div  />
+			
+			Restaurantes
+	[9] (661,62)<button class='e2moi' />
+		[10] (661,62)<div >
+Hoteles />
+			[11] (661,62)<div  />
+			
+			Hoteles
+	[12] (766,62)<button class='e2moi' />
+		[13] (766,62)<div >
+Qué hacer />
+			[14] (766,62)<div  />
+			
+			Qué hacer
+	
+	Transporte público
+
+[15] (35,57)<button aria-label='Menú' class='wR3cXd' />
+	[16] (35,60)<div  />
+		[17] (35,60)<span > />
+[18] (35,166)<button class='wR3cXd fontLabelMedium' />
+	[19] (35,153)<div  />
+		[20] (35,153)<span > />
+	[21] (35,200)<div  />
+		[22] (35,200)<div >Guardado />
+[23] (35,313)<button class='wR3cXd fontLabelMedium' />
+	[24] (35,286)<div  />
+		[25] (35,286)<span > />
+	[26] (35,346)<div  />
+		[27] (35,346)<div >Recientes />
+[28] (35,514)<button class='atHn2d wR3cXd aJPqP fontBodySmall QyI6Nb' />
+	[29] (35,488)<div  />
+		[30] (35,488)<div  />
+			[31] (35,488)<div  />
+	[32] (35,547)<div  />
+		[33] (35,549)<div >Asociación Bomberos Voluntarios de Rosario />
+[34] (35,913)<button class='wR3cXd Ijds6e fontLabelMedium' />
+	[35] (35,887)<div  />
+		[36] (35,887)<span > />
+	[37] (35,940)<div  />
+		[38] (35,940)<div >Descargar aplicación />
+[39] (267,500)<div class='e07Vkf kA9KIf dS8AEf' scrollable='true' />
+	[40] (267,200)<button aria-label='Foto de Asociación Bomberos Voluntarios de Rosario' class='aoRNLd kn2E5e NMjTrf lvtCsd ' />
+		[41] (267,200)<img  />
+	[42] (133,344)<button class='Dx2nRe' />
+		[43] (98,344)<span  />
+		[44] (147,344)<div  />
+	Asociación Bomberos Voluntarios de Rosario
+	4,9
+	(38)
+	[45] (157,582)<button class='DkEaL '>Parque de bomberos />
+	·
+	
+	[46] (135,646)<button aria-label='Información general de Asociación Bomberos Voluntarios de Rosario' class='hh2c6 G7m0Af' role='tab' />
+		Vista general
+	[47] (267,646)<button aria-label='Reseñas de Asociación Bomberos Voluntarios de Rosario' class='hh2c6 ' role='tab' />
+		Reseñas
+	[48] (398,646)<button aria-label='Información sobre Asociación Bomberos Voluntarios de Rosario' class='hh2c6 ' role='tab' />
+		Información
+	[49] (126,760)<button aria-label='Cómo llegar' class='S9kvJb ' />
+		[50] (126,744)<span  />
+			[51] (126,744)<span > />
+		[52] (126,804)<div >Cómo llegar />
+	[53] (197,760)<button aria-label='Guardar' class='S9kvJb ' />
+		[54] (197,744)<span  />
+			[55] (197,744)<span > />
+		[56] (197,804)<div >Guardar />
+	[57] (267,760)<button aria-label='Cercano' class='S9kvJb ' />
+		[58] (267,744)<span  />
+			[59] (267,744)<span > />
+		[60] (267,804)<div >Cercano />
+	[61] (337,774)<button aria-label='Enviar al teléfono' class='S9kvJb ' />
+		[62] (337,744)<span  />
+			[63] (337,744)<span > />
+		[64] (337,817)<div >Enviar al teléfono />
+	[65] (408,760)<button aria-label='Compartir' class='S9kvJb ' />
+		[66] (408,744)<span  />
+			[67] (408,744)<span > />
+		[68] (408,804)<div >Compartir />
+	[69] (267,922)<button aria-label='Dirección: Rioja 2860, S2000 Rosario, Santa Fe ' class='CsEnBe' />
+		[70] (267,922)<div  />
+			
+			[71] (290,922)<div  />
+				[72] (290,922)<div >Rioja 2860, S2000 Rosario, Santa Fe />
+	[73] (431,922)<button aria-label='Copiar la dirección' class='S9kvJb ' />
+		[74] (429,922)<span  />
+			[75] (429,922)<span  />
+	[76] (267,988)<div class='OMl5r hH0dDd jBYmhd' role='button' />
+		[77] (104,988)<span aria-label='Horario' class='LT79uc google-symbols PHazN' role='img'> />
+		[78] (290,988)<div  />
+			[79] (290,988)<div  />
+				[80] (201,988)<span  />
+					[81] (201,988)<span  />
+						[82] (201,988)<span >Abierto las 24 horas />
+				[83] (289,988)<span aria-label='Mostrar el horario de la semana' class='puWIL hKrmvd google-symbols OazX1c' role='img'> />
+[84] (475,500)<button aria-label='Ocultar el panel lateral' class='yra0jd Hk4XGb' />
+	[85] (475,500)<span > />
+[86] (836,53)<a aria-label='Aplicaciones de Google' class='gb_B' href='https://www.google.com.ar/intl/es/about/products?tab=lh' role='button' />
+[87] (921,53)<a aria-label='Iniciar sesión' class='gb_Va gb_Wd gb_Od gb_Ed' href='https://accounts.google.com/ServiceLogin?hl=es&passive=true&continue=https%3A%2F%2Fwww.google.com%2Fmaps%2F%40-32.9678848%2C-60.6208%2C14z%3Fentry%3Dttu%26g_ep%3DEgoyMDI2MDMxMS4wIKXMDSoASAFQAw%253D%253D&service=local&ec=GAZAcQ'>Iniciar sesión />
+	Iniciar sesión
+[88] (967,788)<button aria-label='Mostrar tu ubicación' class='Zf54rc waIsr' />
+	[89] (967,789)<span > />
+[90] (967,864)<div  />
+	[91] (967,841)<button aria-label='Ampliar' class='rM8v5b FpkVFf ' />
+		[92] (967,841)<div  />
+	[93] (967,888)<button aria-label='Reducir' class='TlWmQ FpkVFf ' />
+		[94] (967,888)<div  />
+	[95] (967,864)<div  />
+[96] (967,942)<div  />
+	[97] (967,942)<button aria-label='Ver imágenes de Street View' class='sHj5c a8QCmb' />
+		[98] (967,942)<div  />
+[99] (897,901)<button aria-label='Street View' class='dQDAle' />
+	[100] (897,901)<div  />
+		[101] (897,901)<div  />
+			[102] (897,902)<div  />
+
+Capas
+[103] (522,901)<button class='yHc72 qk5Wte' />
+Imágenes ©2026 , Datos del mapa ©2026 Google
+[104] (715,968)<button class='ZiKfbc tUdUte Hk4XGb ZqLNQd'>Argentina />
+[105] (770,968)<button class='ZiKfbc tUdUte Hk4XGb ZqLNQd'>Términos />
+Privacidad
+Enviar comentarios sobre el producto
+[106] (915,968)<button class='LNGekf' />
+	[107] (864,968)<label class='U5ELMd'>100 m />
+	[108] (929,968)<div  />
+
+</current_dom>

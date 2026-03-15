@@ -1,0 +1,11 @@
+<current_dom_explanation>
+This is a temporary snapshot of the current page's DOM structure. The DOM will change if you navigate to or interact with another page. Use a tool like browser_get_dom to capture and preserve the DOM in your trajectory if needed for later reference.
+</current_dom_explanation>
+<current_dom>
+[0] (247,60)<input class='UGojuc fontBodyMedium EmSKud lpggsf ' role='combobox' />
+[1] (375,62)<button aria-label='Búsqueda' class='mL3xi' />
+	[2] (375,62)<span > />
+[3] (422,62)<button aria-label='Cómo llegar' class='hArJGc vF7Cdb' />
+	[4] (422,62)<span > />
+
+</current_dom>

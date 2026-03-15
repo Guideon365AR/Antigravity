@@ -1,0 +1,91 @@
+<current_dom_explanation>
+This is a temporary snapshot of the current page's DOM structure. The DOM will change if you navigate to or interact with another page. Use a tool like browser_get_dom to capture and preserve the DOM in your trajectory if needed for later reference.
+</current_dom_explanation>
+<current_dom>
+[0] (782,60)<button aria-label='Cerrar' class='OyzoZb'> />
+	
+Compartir
+[1] (259,126)<button aria-label='Enviar un enlace' class='zaxyGe waIsr NlVald YTfrze' role='tab'>Enviar un enlace />
+	[2] (259,123)<div  />
+[3] (414,126)<button aria-label='Insertar un mapa' class='zaxyGe waIsr NlVald Iuumac' role='tab'>Insertar un mapa />
+	[4] (414,123)<div  />
+[5] (500,583)<div class='eNBuZ  kA9KIf vRIAEd' scrollable='true' />
+	[6] (248,220)<button class='K3oJgc' />
+		[7] (236,220)<span >Mediano />
+		[8] (278,220)<span > />
+	[9] (444,266)<input class='yA7sBe' />
+	[10] (747,266)<button class='VVjj3 PpaGLb'>Copiar HTML />
+	[11] (758,1017)<gmp-internal-camera-control  />
+		[12] (758,1017)<button aria-label='Controles de visualización del mapa' class='gm-control-active' title='Controles de visualización del mapa' />
+			[13] (758,1017)<img  />
+	[14] (237,1037)<button aria-label='Muestra las imágenes de satélite' class='gm-inset-map gm-inset-light' title='Muestra las imágenes de satélite' />
+		[15] (237,1037)<div  />
+		[16] (237,1037)<div  />
+			[17] (237,1037)<div  />
+				[18] (237,1037)<div  />
+					[19] (237,1037)<iframe  />
+					[20] (237,1037)<div  />
+	[21] (387,1078)<button aria-label='Combinaciones de teclas' title='Combinaciones de teclas'>Combinaciones de teclas />
+	Datos del mapa ©2026 Google
+	[22] (617,1078)<a aria-label='Términos (se abre en una nueva pestaña)' href='https://www.google.com/intl/es_AR/help/terms_maps.html'>Términos />
+	[23] (715,1078)<a href='https://www.google.com/maps/@-32.943156,-60.662483,16z/data=!10m1!1e1!12b1?source=apiv3&rapsrc=apiv3' title='Informar a Google acerca de errores en las imágenes o en el mapa de carreteras'>Notificar un problema de Maps />
+	[24] (478,402)<a aria-label='Obtener indicaciones (se abre en una nueva pestaña)' href='https://www.google.com/maps/dir//''/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x95b7ab44b74fc7ff:0xac4cf8763d7a6e8f!3e0?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAEYASAB' />
+		[25] (478,402)<div  />
+			[26] (478,402)<div  />
+
+
+[27] (635,62)<div class='rHNip cRLbXd' scrollable='true' />
+	
+	Restaurantes
+	
+	Hoteles
+	
+	Qué hacer
+	
+	Transporte público
+
+
+
+Guardado
+
+Recientes
+Asociación Bomberos Voluntarios de Rosario
+
+Descargar aplicación
+Asociación Bomberos Voluntarios de Rosario
+4,9
+(38)
+Parque de bomberos
+·
+
+Vista general
+Reseñas
+Información
+
+Cómo llegar
+
+Guardar
+
+Cercano
+
+Enviar al teléfono
+
+Compartir
+
+Rioja 2860, S2000 Rosario, Santa Fe
+
+Abierto las 24 horas
+
+
+Iniciar sesión
+
+
+Capas
+Imágenes ©2026 , Datos del mapa ©2026 Google
+Argentina
+Términos
+Privacidad
+Enviar comentarios sobre el producto
+100 m
+
+</current_dom>

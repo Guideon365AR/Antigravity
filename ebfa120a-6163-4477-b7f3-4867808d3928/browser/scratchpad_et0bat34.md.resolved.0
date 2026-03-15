@@ -1,0 +1,9 @@
+# Task: Get Google Maps iframe for 'Bomberos voluntarios de Rosario'
+
+## Checklist
+- [ ] Open Google Maps
+- [ ] Search for 'Bomberos voluntarios de Rosario'
+- [ ] Select the correct result
+- [ ] Click 'Share' -> 'Embed map'
+- [ ] Copy the iframe code
+- [ ] Return the code
