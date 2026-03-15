@@ -1,18 +1,19 @@
 # Eliminar Pantallas Secundarias
 
-El objetivo es simplificar la interfaz dejando únicamente el "Centro de Control" (Dashboard), eliminando las pantallas de "Nueva Intervención", "Personal" y "Novedades".
+El objetivo es simplificar la interfaz dejando únicamente el "Centro de Control" (Dashboard),# Removing Flashcards From Nueva Intervencion
+
+The user wants to simplify the "Nueva Intervencion" screen by removing the checklist flashcards, while keeping the rest of the layout and navigation intact.
 
 ## Proposed Changes
 
-### Interfaz Principal
-#### [MODIFY] ultmo ignealis.html
-- Eliminar de `<nav id="nav">` los botones correspondientes a `s-intervencion`, `s-personal` y `s-novedades`.
-- Eliminar los bloques HTML completos de `<div id="s-intervencion">`, `<div id="s-personal">` y `<div id="s-novedades">`.
-- Simplificar el bloque de Javascript final (`<script>`), eliminando las animaciones que hacían referencia a los `id` de la pantalla de intervención que será eliminada, y manteniendo solo la lógica de animación para el Dashboard.
+### `ultmo ignealis.html`
+- **[MODIFY] [ultmo ignealis.html](file:///c:/Users/Gustavo/Desktop/Pruebas/ultmo%20ignealis.html)**: 
+  - Remove the small "✓ Dirección", "✓ Tipo" flashcards from beneath the transcription block.
+  - Fix the main CSS stylesheet to strictly hide `display: none !important;` `.screen` elements when they don't have the `.active` class, preventing screens from stacking over each other.
 
 ## Verification Plan
 
 ### Manual Verification
-- Cargar el archivo en el navegador y verificar que la barra lateral solo muestre la opción del "Centro de Control".
-- Verificar visualmente que no queden rastros de las pantallas eliminadas y que la pantalla actual se vea completa.
+- Verify that clicking "Nueva Intervencion" in the sidebar renders its content.
+- Verify that clicking other items switches the screen completely without overlapping data.
 - Comprobar la consola del navegador (`F12`) para asegurar que el Javascript no tire errores por elementos no encontrados (ej. animaciones referenciando elementos borrados).

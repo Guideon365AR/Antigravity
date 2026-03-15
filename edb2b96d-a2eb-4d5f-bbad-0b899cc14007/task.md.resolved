@@ -1,5 +1,3 @@
-- [ ] Remove unused navigation buttons from sidebar
-- [ ] Delete `s-intervencion` screen section
-- [ ] Delete `s-personal` screen section
-- [ ] Delete `s-novedades` screen section
-- [ ] Clean up redundant animation Javascript
+- [x] Remove checklist flashcards from `Nueva Intervencion` screen
+- [x] Fix visibility bug with overlapping screens via CSS
+- [x] Restore `Nueva Intervencion` content
