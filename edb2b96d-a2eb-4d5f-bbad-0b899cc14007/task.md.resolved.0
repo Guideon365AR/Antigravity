@@ -1,0 +1,5 @@
+- [ ] Remove unused navigation buttons from sidebar
+- [ ] Delete `s-intervencion` screen section
+- [ ] Delete `s-personal` screen section
+- [ ] Delete `s-novedades` screen section
+- [ ] Clean up redundant animation Javascript
