@@ -1,0 +1,12 @@
+# Task: Extract Google Maps Embed URL for a specific route
+
+## Plan
+1. [ ] Open the Google Maps URL: `https://www.google.com/maps/dir/Asociaci%C3%B3n+Bomberos+Voluntarios+de+Rosario,+Rioja+2860,+S2000+Rosario,+Santa+Fe/Mitre+1240,+S2000COZ+Rosario,+Santa+Fe/@-32.9477831,-60.6634915,15z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x95b7ab44b74fc7ff:0xac4cf8763d7a6e8f!2m2!1d-60.662516!2d-32.9431718!1m5!1m1!1s0x95b7ab1063652bad:0xb5c8eec67db80c5!2m2!1d-60.6410249!2d-32.9517482!3e0`
+2. [ ] Find and click the 'Share' button.
+3. [ ] Navigate to 'Embed a map' tab.
+4. [ ] Copy the `src` URL from the iframe.
+5. [ ] Return the extracted URL.
+
+## Findings
+- **Maps URL:** (to be filled)
+- **Embed URL:** (to be filled)

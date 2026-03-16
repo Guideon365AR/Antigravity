@@ -1,0 +1,165 @@
+<current_dom_explanation>
+This is a temporary snapshot of the current page's DOM structure. The DOM will change if you navigate to or interact with another page. Use a tool like browser_get_dom to capture and preserve the DOM in your trajectory if needed for later reference.
+</current_dom_explanation>
+<current_dom>
+[0] (151,63)<button class='m6Uuef' role='radio' />
+	[1] (151,53)<div aria-label='Mejores medios de transporte' class='OzmNAc' role='img' />
+		
+	[2] (151,97)<div >Mejor />
+[3] (197,63)<button class='m6Uuef' role='radio'>9 min />
+	
+	9 min
+[4] (244,63)<button class='m6Uuef' role='radio' />
+	[5] (244,53)<div aria-label='Transporte público' class='OzmNAc' role='img' />
+		
+	[6] (244,97)<div >14 min />
+[7] (290,63)<button class='m6Uuef' role='radio' />
+	[8] (290,53)<div aria-label='A pie' class='OzmNAc' role='img' />
+		
+	[9] (290,97)<div >36 min />
+[10] (337,63)<button class='m6Uuef' role='radio' />
+	[11] (337,53)<div aria-label='En bicicleta' class='OzmNAc' role='img' />
+		
+	[12] (337,97)<div >11 min />
+
+[13] (429,53)<button aria-label='Cerrar indicaciones' class='YismEf' />
+	[14] (429,53)<span > />
+[15] (93,159)<div  />
+	[16] (104,160)<span > />
+	[17] (103,201)<span > />
+[18] (267,160)<div class='sbib_b' id='sb_ifc50' role='combobox' />
+	[19] (267,160)<input aria-label='Punto de partida Asociación Bomberos Voluntarios de Rosario, Rioja 2860, S2000 Rosario, Santa Fe' class='ZBTq6e' />
+
+[20] (93,239)<div  />
+	[21] (104,241)<span > />
+[22] (267,240)<div class='sbib_b' id='sb_ifc51' role='combobox' />
+	[23] (267,240)<input aria-label='Destino Mitre 1240, S2000COZ Rosario, Santa Fe' class='ZBTq6e' />
+
+[24] (429,200)<button aria-label='Invertir punto de partida y destino' class='j9zajd' />
+	[25] (429,196)<span > />
+[26] (267,319)<button class='fC7rrc xiw3Pd' />
+	[27] (93,319)<div  />
+		[28] (104,323)<div  />
+			[29] (104,319)<span > />
+	[30] (267,319)<div  />
+		[31] (187,319)<span >Añadir destino />
+[32] (635,62)<div class='rHNip cRLbXd' scrollable='true' />
+	[33] (610,62)<button aria-label='Buscar paradas en la ruta' class='e2moi' />
+		[34] (610,62)<div  />
+			[35] (502,62)<span > />
+			[36] (573,62)<span >Buscar en la ruta… />
+	
+	Gasolineras
+	
+	Estaciones de recarga de VE
+
+[37] (35,57)<button aria-label='Menú' class='wR3cXd' />
+	[38] (35,60)<div  />
+		[39] (35,60)<span > />
+[40] (35,166)<button class='wR3cXd fontLabelMedium' />
+	[41] (35,153)<div  />
+		[42] (35,153)<span > />
+	[43] (35,200)<div  />
+		[44] (35,200)<div >Guardado />
+[45] (35,313)<button class='wR3cXd fontLabelMedium' />
+	[46] (35,286)<div  />
+		[47] (35,286)<span > />
+	[48] (35,346)<div  />
+		[49] (35,346)<div >Recientes />
+[50] (35,514)<button class='ttNoGe HH6fZe atHn2d wR3cXd aJPqP fontBodySmall seQ8Ye QyI6Nb' />
+	[51] (35,488)<div  />
+		[52] (35,488)<div  />
+			[53] (35,488)<div  />
+			
+	[54] (35,547)<div  />
+		[55] (35,536)<div >Mitre 1240 />
+		[56] (35,562)<div >9 min />
+[57] (35,647)<button class='xkqFBc  wR3cXd aJPqP fontBodySmall flwnib' />
+	[58] (35,634)<div  />
+		[59] (31,637)<div >2 />
+	[60] (35,681)<div  />
+		[61] (35,684)<div >Rosario />
+[62] (35,913)<button class='wR3cXd Ijds6e fontLabelMedium' />
+	[63] (35,887)<div  />
+		[64] (35,887)<span > />
+	[65] (35,940)<div  />
+		[66] (35,940)<div >Descargar aplicación />
+[67] (195,431)<button class='e2moi' />
+	[68] (195,431)<div  />
+		[69] (149,431)<span > />
+		[70] (197,431)<span >Salir ahora />
+		[71] (244,431)<span > />
+[72] (408,429)<button class='OcYctc fontTitleSmall' />
+	[73] (408,429)<div >Opciones />
+[74] (201,532)<button class='qS6JSb fontTitleSmall'>Enviar indicaciones a tu teléfono />
+	
+	Enviar indicaciones a tu teléfono
+[75] (388,532)<button class='qS6JSb fontTitleSmall'>Copiar enlace />
+	
+	Copiar enlace
+[76] (267,686)<div class='UgZKXd ZxL25b vKKO3d yYG3jf' role='link' />
+	[77] (104,624)<span aria-label='En coche' class='Os0QJc google-symbols' role='img'> />
+	[78] (267,697)<div  />
+		[79] (290,697)<div  />
+			[80] (416,641)<div  />
+				[81] (421,621)<div >9 min />
+				[82] (421,661)<div  />
+					[83] (421,661)<div >3,4 km />
+			[84] (290,621)<div  />
+				[85] (290,621)<h1 >por
+Córdoba />
+			[86] (290,677)<div  />
+				[87] (248,677)<span  />
+					[88] (248,677)<span  />
+						[89] (248,677)<span >La ruta más rápida ahora debido al estado del tráfico />
+			[90] (290,750)<div  />
+				[91] (167,750)<button class='TIQqpf fontTitleSmall Hk4XGb' />
+					Detalles
+				[92] (255,750)<button class='TIQqpf fontTitleSmall Hk4XGb' />
+					Vista previa
+
+9 min
+3,5 km
+por
+9 de Julio
+
+9 min
+por
+Mendoza y 9 de Julio
+
+¡Nuevo! Continúa tu trayecto tocando la notificación en el teléfono para obtener indicaciones
+[93] (429,884)<button aria-label='Cerrar' class='Rl3sHe'> />
+	
+[94] (475,500)<button aria-label='Ocultar el panel lateral' class='yra0jd Hk4XGb' />
+	[95] (475,500)<span > />
+[96] (836,53)<a aria-label='Aplicaciones de Google' class='gb_B' href='https://www.google.com.ar/intl/es/about/products?tab=lh' role='button' />
+[97] (921,53)<a aria-label='Iniciar sesión' class='gb_Va gb_Wd gb_Od gb_Ed' href='https://accounts.google.com/ServiceLogin?hl=es&passive=true&continue=https%3A%2F%2Fwww.google.com%2Fmaps%2Fdir%2FAsociaci%25C3%25B3n%2BBomberos%2BVoluntarios%2Bde%2BRosario%2C%2BRioja%2B2860%2C%2BS2000%2BRosario%2C%2BSanta%2BFe%2FMitre%2B1240%2C%2BS2000COZ%2BRosario%2C%2BSanta%2BFe%2F%40-32.9477999%2C-60.6737914%2C14z%2Fdata%3D!3m1!4b1!4m14!4m13!1m5!1m1!1s0x95b7ab44b74fc7ff%3A0xac4cf8763d7a6e8f!2m2!1d-60.662516!2d-32.9431718!1m5!1m1!1s0x95b7ab1063652bad%3A0xb5c8eec67db80c5!2m2!1d-60.6410249!2d-32.9517482!3e0%3Fentry%3Dttu%26g_ep%3DEgoyMDI2MDMxMS4wIKXMDSoASAFQAw%253D%253D&service=local&ec=GAZAcQ'>Iniciar sesión />
+	Iniciar sesión
+[98] (967,766)<button aria-label='Mostrar tu ubicación' class='Zf54rc waIsr' />
+	[99] (967,767)<span > />
+[100] (967,843)<div  />
+	[101] (967,819)<button aria-label='Ampliar' class='rM8v5b FpkVFf ' />
+		[102] (967,819)<div  />
+	[103] (967,866)<button aria-label='Reducir' class='TlWmQ FpkVFf ' />
+		[104] (967,866)<div  />
+	[105] (967,843)<div  />
+[106] (967,920)<div  />
+	[107] (967,920)<button aria-label='Ver imágenes de Street View' class='sHj5c a8QCmb' />
+		[108] (967,920)<div  />
+[109] (897,879)<button aria-label='Street View' class='dQDAle' />
+	[110] (897,879)<div  />
+		[111] (897,879)<div  />
+			[112] (897,880)<div  />
+
+Capas
+[113] (522,879)<button class='yHc72 qk5Wte' />
+Imágenes ©2026 , Datos del mapa ©2026 Google
+[114] (715,968)<button class='ZiKfbc tUdUte Hk4XGb ZqLNQd'>Argentina />
+[115] (770,968)<button class='ZiKfbc tUdUte Hk4XGb ZqLNQd'>Términos />
+[116] (828,968)<button class='ZiKfbc tUdUte Hk4XGb ZqLNQd'>Privacidad />
+Enviar comentarios sobre el producto
+[117] (933,968)<button class='LNGekf' />
+	[118] (901,968)<label class='U5ELMd'>500 m />
+	[119] (948,968)<div  />
+
+</current_dom>

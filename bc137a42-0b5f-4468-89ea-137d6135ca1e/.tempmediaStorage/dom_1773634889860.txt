@@ -1,0 +1,128 @@
+<current_dom_explanation>
+This is a temporary snapshot of the current page's DOM structure. The DOM will change if you navigate to or interact with another page. Use a tool like browser_get_dom to capture and preserve the DOM in your trajectory if needed for later reference.
+</current_dom_explanation>
+<current_dom>
+
+Mejor
+
+9 min
+
+14 min
+
+36 min
+
+11 min
+
+
+
+
+
+
+
+
+
+Añadir destino
+[0] (635,62)<div class='rHNip cRLbXd' scrollable='true' />
+	
+	Buscar en la ruta…
+	
+	Gasolineras
+	
+	Estaciones de recarga de VE
+
+
+
+Guardado
+
+Recientes
+
+Mitre 1240
+9 min
+2
+Rosario
+
+Descargar aplicación
+
+Salir ahora
+
+Opciones
+
+Enviar indicaciones a tu teléfono
+
+Copiar enlace
+
+9 min
+3,4 km
+por
+Córdoba
+La ruta más rápida ahora debido al estado del tráfico
+Detalles
+Vista previa
+
+9 min
+3,5 km
+por
+9 de Julio
+
+9 min
+por
+Mendoza y 9 de Julio
+
+¡Nuevo! Continúa tu trayecto tocando la notificación en el teléfono para obtener indicaciones
+
+
+[1] (836,53)<a aria-label='Aplicaciones de Google' class='gb_B' href='https://www.google.com.ar/intl/es/about/products?tab=lh' role='button' />
+[2] (921,53)<a aria-label='Iniciar sesión' class='gb_Va gb_Wd gb_Od gb_Ed' href='https://accounts.google.com/ServiceLogin?hl=es&passive=true&continue=https%3A%2F%2Fwww.google.com%2Fmaps%2Fdir%2FAsociaci%25C3%25B3n%2BBomberos%2BVoluntarios%2Bde%2BRosario%2C%2BRioja%2B2860%2C%2BS2000%2BRosario%2C%2BSanta%2BFe%2FMitre%2B1240%2C%2BS2000COZ%2BRosario%2C%2BSanta%2BFe%2F%40-32.9477999%2C-60.6737914%2C14z%2Fdata%3D!3m1!4b1!4m14!4m13!1m5!1m1!1s0x95b7ab44b74fc7ff%3A0xac4cf8763d7a6e8f!2m2!1d-60.662516!2d-32.9431718!1m5!1m1!1s0x95b7ab1063652bad%3A0xb5c8eec67db80c5!2m2!1d-60.6410249!2d-32.9517482!3e0%3Fentry%3Dttu%26g_ep%3DEgoyMDI2MDMxMS4wIKXMDSoASAFQAw%253D%253D&service=local&ec=GAZAcQ'>Iniciar sesión />
+	Iniciar sesión
+
+
+Capas
+[3] (155,500)<ul aria-label='Configuración' class='lTfMvb' role='menu' scrollable='true' />
+	[4] (260,38)<button aria-label='Cerrar' class='UHOsgd' />
+		[5] (260,35)<span > />
+	[6] (147,110)<div  />
+		[7] (33,110)<span > />
+		[8] (120,110)<label class='fontBodyMedium gFio1e'>Mostrar barra lateral />
+		[9] (247,110)<button aria-label='Mostrar barra lateral' class='Ud5kdf LdO2ac ExdFSd ' role='switch' />
+			[10] (256,110)<div  />
+	[11] (147,185)<button class='T2ozWe' role='menuitem' />
+		[12] (33,185)<span > />
+		[13] (87,185)<label class='fontBodyMedium gFio1e'>Guardado />
+	[14] (147,238)<button class='T2ozWe ' role='menuitem' />
+		[15] (33,238)<span > />
+		[16] (86,238)<label class='fontBodyMedium gFio1e'>Recientes />
+	[17] (147,291)<button class='T2ozWe' role='menuitem' />
+		[18] (33,291)<span > />
+		[19] (115,291)<label class='fontBodyMedium gFio1e'>Tus contribuciones />
+	[20] (147,344)<button class='T2ozWe' role='menuitem' />
+		[21] (33,344)<span > />
+		[22] (120,344)<label class='fontBodyMedium gFio1e'>Compartir ubicación />
+	[23] (147,398)<a class='T2ozWe' href='/maps/timeline?hl=es&authuser=0' role='menuitem' />
+		[24] (33,398)<span > />
+		[25] (98,398)<label class='fontBodyMedium gFio1e'>Tu cronología />
+	[26] (147,451)<a class='T2ozWe' href='//myaccount.google.com/yourdata/maps?authuser=0&hl=es' role='menuitem' />
+		[27] (33,451)<span > />
+		[28] (114,451)<label class='fontBodyMedium gFio1e'>Tus datos en Maps />
+	[29] (147,526)<button class='T2ozWe' role='menuitem' />
+		[30] (33,526)<span > />
+		[31] (146,526)<label class='fontBodyMedium gFio1e'>Compartir o insertar el mapa />
+	[32] (147,579)<button class='T2ozWe' role='menuitem' />
+		[33] (33,579)<span > />
+		[34] (82,579)<label class='fontBodyMedium gFio1e'>Imprimir />
+	[35] (147,632)<button class='fontBodyMedium T2ozWe' role='menuitem'>Añadir un sitio que falta />
+	[36] (147,686)<a class='fontBodyMedium T2ozWe' href='https://business.google.com/create?service=plus&hl=es&authuser=0&gmbsrc=ar-es-et-ip-z-gmb-s-z-l~mrc%7Cayb%7Cps&skiplp=1' role='menuitem'>Añade tu empresa />
+	[37] (147,739)<button class='fontBodyMedium T2ozWe' role='menuitem'>Editar el mapa />
+	[38] (147,814)<button class='fontBodyMedium T2ozWe' role='menuitem'>Trucos y consejos />
+	[39] (147,867)<button class='fontBodyMedium T2ozWe' role='menuitem'>Obtener ayuda />
+	[40] (147,920)<button class='fontBodyMedium T2ozWe' role='menuitem'>Información para los consumidores />
+	[41] (147,995)<button class='aAaxGf T2ozWe' role='menuitem' />
+		[42] (42,995)<span >Idioma />
+		[43] (70,995)<span > />
+Imágenes ©2026 , Datos del mapa ©2026 Google
+Argentina
+Términos
+Privacidad
+Enviar comentarios sobre el producto
+500 m
+
+</current_dom>
