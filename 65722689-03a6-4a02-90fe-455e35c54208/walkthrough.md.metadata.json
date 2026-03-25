@@ -1,5 +1,6 @@
 {
   "artifactType": "ARTIFACT_TYPE_WALKTHROUGH",
-  "summary": "Walkthrough document demonstrating the new Inventario y EPP feature implemented in the prototype.",
-  "updatedAt": "2026-03-25T06:57:47.789033700Z"
+  "summary": "Fixed the image path format for the video demonstrator.",
+  "updatedAt": "2026-03-25T07:56:29.807208100Z",
+  "version": "3"
 }

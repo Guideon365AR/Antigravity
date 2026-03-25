@@ -1,0 +1,76 @@
+<current_dom_explanation>
+This is a temporary snapshot of the current page's DOM structure. The DOM will change if you navigate to or interact with another page. Use a tool like browser_get_dom to capture and preserve the DOM in your trajectory if needed for later reference.
+</current_dom_explanation>
+<current_dom>
+Bomberos Voluntarios
+de Rosario
+[0] (93,516)<nav class='flex-1 py-6 px-3 space-y-1 overflow-y-auto' id='nav' scrollable='true'>Vista Monitor Externo />
+	[1] (91,252)<button class='nav-btn w-full text-left px-4 py-3 rounded-lg text-sm transition-all border text-red-500/70 border-transparent'>Centro de Control />
+	[2] (91,325)<button class='nav-btn w-full text-left px-4 py-3 rounded-lg text-sm transition-all hover:text-white hover:bg-white/5 border text-red-500/70 border-transparent'>Nueva intervención />
+	[3] (91,399)<button class='nav-btn w-full text-left px-4 py-3 rounded-lg text-sm transition-all hover:text-white hover:bg-white/5 border text-red-500/70 border-transparent'>Personal />
+	[4] (91,473)<button class='nav-btn w-full text-left px-4 py-3 rounded-lg text-sm transition-all text-red-500/70 hover:text-white hover:bg-white/5 border border-transparent'>Guardia / Novedades />
+	[5] (91,546)<button class='nav-btn w-full text-left px-4 py-3 rounded-lg text-sm transition-all hover:text-white hover:bg-white/5 border flex items-center gap-2 text-red-500/70 border-transparent'>Inicio de Guardia />
+	[6] (91,620)<button class='nav-btn w-full text-left px-4 py-3 rounded-lg text-sm transition-all hover:text-white hover:bg-white/5 border active text-white bg-white/5 border-white/10 shadow-[0_0_15px_rgba(239,68,68,0.1)]'>Vehículos y Equipamiento />
+	[7] (91,694)<button class='nav-btn w-full text-left px-4 py-3 rounded-lg text-sm transition-all text-red-500/70 hover:text-white hover:bg-white/5 border border-transparent'>Inventario y EPP />
+	[8] (91,767)<button class='nav-btn w-full text-left px-4 py-3 rounded-lg text-sm transition-all text-red-500/70 hover:text-white hover:bg-white/5 border border-transparent'>Reportes y Estadísticas />
+	[9] (91,841)<button class='nav-btn w-full text-left px-4 py-3 rounded-lg text-sm transition-all text-red-500/70 hover:text-white hover:bg-white/5 border border-transparent'>Panel de Administración />
+	Vista Monitor Externo
+IGNEALIS
+v2.0 · GECEM TD — UNR · AGPL v3
+[10] (594,500)<main class='flex-1 overflow-y-auto relative z-10 p-8' id='main' scrollable='true' />
+	Vehículos y
+	Equipamiento
+	6 unidades registradas · 5 operativas · 1 en mantenimiento
+	Operativas
+	5
+	En mantenimiento
+	1
+	Alertas activas
+	2
+	Próximo service
+	AM-2 · 320 km
+	Flota del cuartel
+	[11] (347,573)<div  />
+		[12] (347,532)<div  />
+			[13] (260,532)<span >AM-1 />
+			[14] (426,532)<span >Operativo />
+		[15] (347,574)<div >Autobomba Mediana · 2018 />
+		[16] (347,600)<div  />
+			[17] (329,600)<div  />
+		[18] (347,620)<div >Combustible: 82% />
+	[19] (347,757)<div  />
+		[20] (347,716)<div  />
+			[21] (260,716)<span >AU-1 />
+			[22] (419,716)<span >Mantenimiento />
+		[23] (347,758)<div >Autobomba Urbana · 2015 />
+		[24] (347,784)<div  />
+			[25] (277,784)<div  />
+		[26] (347,804)<div >⚠ Service 5.000 km en curso />
+	[27] (347,941)<div  />
+		[28] (347,901)<div  />
+			[29] (260,901)<span >AU-3 />
+			[30] (426,901)<span >Operativo />
+		[31] (347,942)<div >Autobomba Urbana · 2021 />
+		[32] (347,968)<div  />
+			[33] (338,968)<div  />
+		[34] (347,988)<div >Combustible: 91% />
+	AM-1 — Autobomba Mediana
+	Patente: AB 123 CD · Año: 2018 · Chasis: Mercedes-Benz Atego 1725
+	● Operativo
+	Datos técnicos
+	Capacidad tanque
+	4.000 litros
+	Potencia bomba
+	1.500 lt/min
+	Kilometraje actual
+	48.320 km
+	Próximo service
+	50.000 km (1.680 km)
+	Campos personalizados
+	Configurados por el administrador
+	Nº radio VHF asignado
+	Canal 5 — 148.250 MHz
+	Vencimiento seguro
+	⚠ 30/04/2026 (45 días)
+
+</current_dom>

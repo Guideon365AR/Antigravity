@@ -17,4 +17,9 @@
 - Incorporación exitosa de los elementos y clasificaciones pedidos por el usuario sin alterar el resto del archivo [IGNEALIS_Prototipo_v3.html](file:///c:/Users/Gustavo/Desktop/ProQualis/Proyecto%20ABV/Ignealis/Docs%20y%20Prototipo%20html%20FINAL/IGNEALIS_Prototipo_v3.html).
 
 ## Resultados de la Validación
-- Código insertado correctamente. ¡El diseño estético es completamente visualizable en cualquier navegador al abrir el HTML!
+- Código HTML insertado correctamente. ¡El diseño estético es completamente visualizable en cualquier navegador al abrir el HTML!
+- **Documentación Actualizada**: Se generó el archivo `IGNEALIS_Especificacion_Funcional_v6.docx` en la carpeta `Docs y Prototipo html FINAL`. Éste incluye el nuevo "Módulo de Gestión de Inventario y EPP" al final del documento con la redacción y clasificaciones correctas.
+
+## Video de Presentación Sincronizado
+Se grabó una demostración automatizada navegando por todas las secciones del prototipo HTML con los tiempos exactos requeridos para sincronizarse con el locutor, basándonos en el `script para presentacion de ignealis.txt`.
+![Video Demo IGNEALIS](/C:/Users/Gustavo/.gemini/antigravity/brain/65722689-03a6-4a02-90fe-455e35c54208/ignealis_demo_video_1774423775977.webp)

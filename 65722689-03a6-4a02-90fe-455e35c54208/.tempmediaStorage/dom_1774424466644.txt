@@ -1,0 +1,58 @@
+<current_dom_explanation>
+This is a temporary snapshot of the current page's DOM structure. The DOM will change if you navigate to or interact with another page. Use a tool like browser_get_dom to capture and preserve the DOM in your trajectory if needed for later reference.
+</current_dom_explanation>
+<current_dom>
+Bomberos Voluntarios
+de Rosario
+[0] (93,516)<nav class='flex-1 py-6 px-3 space-y-1 overflow-y-auto' id='nav' scrollable='true'>Vista Monitor Externo />
+	[1] (91,252)<button class='nav-btn w-full text-left px-4 py-3 rounded-lg text-sm transition-all border text-red-500/70 border-transparent'>Centro de Control />
+	[2] (91,325)<button class='nav-btn w-full text-left px-4 py-3 rounded-lg text-sm transition-all hover:text-white hover:bg-white/5 border active text-white bg-white/5 border-white/10 shadow-[0_0_15px_rgba(239,68,68,0.1)]'>Nueva intervención />
+	[3] (91,399)<button class='nav-btn w-full text-left px-4 py-3 rounded-lg text-sm transition-all text-red-500/70 hover:text-white hover:bg-white/5 border border-transparent'>Personal />
+	[4] (91,473)<button class='nav-btn w-full text-left px-4 py-3 rounded-lg text-sm transition-all text-red-500/70 hover:text-white hover:bg-white/5 border border-transparent'>Guardia / Novedades />
+	[5] (91,546)<button class='nav-btn w-full text-left px-4 py-3 rounded-lg text-sm transition-all text-red-500/70 hover:text-white hover:bg-white/5 border border-transparent flex items-center gap-2'>Inicio de Guardia />
+	[6] (91,620)<button class='nav-btn w-full text-left px-4 py-3 rounded-lg text-sm transition-all text-red-500/70 hover:text-white hover:bg-white/5 border border-transparent'>Vehículos y Equipamiento />
+	[7] (91,694)<button class='nav-btn w-full text-left px-4 py-3 rounded-lg text-sm transition-all text-red-500/70 hover:text-white hover:bg-white/5 border border-transparent'>Inventario y EPP />
+	[8] (91,767)<button class='nav-btn w-full text-left px-4 py-3 rounded-lg text-sm transition-all text-red-500/70 hover:text-white hover:bg-white/5 border border-transparent'>Reportes y Estadísticas />
+	[9] (91,841)<button class='nav-btn w-full text-left px-4 py-3 rounded-lg text-sm transition-all text-red-500/70 hover:text-white hover:bg-white/5 border border-transparent'>Panel de Administración />
+	Vista Monitor Externo
+IGNEALIS
+v2.0 · GECEM TD — UNR · AGPL v3
+[10] (594,500)<main class='flex-1 overflow-y-auto relative z-10 p-8' id='main' scrollable='true' />
+	Nueva
+	Intervención
+	INT-2026-0342
+	IA activa — transcribiendo
+	Datos extraídos en vivo
+	Dirección
+	IA
+                  97%
+	Mitre 1240
+	Tipo de emergencia
+	IA
+                  94%
+	Incendio estructural
+	Piso / Referencia
+	IA
+                  88%
+	4to piso
+	Personas en riesgo
+	IA
+                  91%
+	1 persona atrapada, no puede bajar
+	Denunciante y Teléfono
+	[11] (281,771)<input class='w-1/2 bg-gray-900/50 border border-gray-700 rounded-lg px-3 py-2 text-sm text-gray-200 focus:outline-none focus:border-red-500 transition-colors' />
+	[12] (395,771)<input class='w-1/2 bg-gray-900/50 border border-gray-700 rounded-lg px-3 py-2 text-sm text-gray-200 font-mono focus:outline-none focus:border-red-500 transition-colors' />
+	Hidrante más cercano (automático)
+	Mitre y Laprida · 85 m · Tipo DN100 ·
+	Operativo
+	Vehículos sugeridos
+	🗺 Mapa Operativo — Táctico
+	Transcripción de audio (Canal 1)
+	Grabando
+	Llamante:
+	Buenas, acá Jorge Fernández, llamo porque hay
+                un incendio en el edificio de Mitre mil doscientos cuarenta, cuarto piso, hay llamas saliendo por la
+                ventana y una persona atrapada que no puede bajar. Mi celular es el tres cuatro uno, cuatro cinco seis,
+                siete ocho nueve cero.
+
+</current_dom>
