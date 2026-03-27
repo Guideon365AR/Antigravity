@@ -1,0 +1,14 @@
+<current_dom_explanation>
+This is a temporary snapshot of the current page's DOM structure. The DOM will change if you navigate to or interact with another page. Use a tool like browser_get_dom to capture and preserve the DOM in your trajectory if needed for later reference.
+</current_dom_explanation>
+<current_dom>
+Orion Admin
+Asistente de Redacción UNC
+Bienvenido.
+Para comenzar a redactar notas administrativas con total precisión y formalidad, indíqueme cómo debo llamarlo.
+[0] (500,552)<label class='block text-sm font-semibold text-slate-700 mb-2'>Su nombre completo />
+[1] (500,618)<input class='glass-input' id='user-name-input' placeholder='Ej: Dr. Juan Pérez' />
+[2] (500,727)<button class='btn-primary w-full mt-4' id='btn-next-name'>Continuar />
+	[3] (530,727)<iconify-icon  />
+
+</current_dom>

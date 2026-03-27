@@ -1,0 +1,14 @@
+# App "Asistente de Redacción Administrativa"
+
+## Tareas Iniciales
+- [ ] Analizar el skill `redaccion_administrativa_universitaria` y el diseño de [liquid-systems.html](file:///c:/Users/Gustavo/Desktop/ProQualis/Proyectos%20SRP/Agente%20Redacc%20Admin/liquid-systems.html).
+- [ ] Definir el plan de implementación detallado.
+
+## Desarrollo UI (Onboarding)
+- [ ] Pantalla de bienvenida (Solicitar nombre).
+- [ ] Solicitar carga de una "Nota de ejemplo".
+- [ ] Simular extracción de elementos (Logo, Encabezado, Pie de página).
+
+## Desarrollo UI (Editor de Notas)
+- [ ] Interfaz principal de redacción apoyada por el skill.
+- [ ] Aplicar estilo visual de Liquid Systems.

@@ -1,0 +1,6 @@
+{
+  "artifactType": "ARTIFACT_TYPE_WALKTHROUGH",
+  "summary": "Fixed image paths using standard Windows absolute paths.",
+  "updatedAt": "2026-03-27T09:01:16.481712800Z",
+  "version": "3"
+}

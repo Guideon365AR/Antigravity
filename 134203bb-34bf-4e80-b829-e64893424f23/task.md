@@ -1,0 +1,21 @@
+# App "Asistente de Redacción Administrativa"
+
+## Tareas Iniciales
+- [x] Analizar el skill `redaccion_administrativa_universitaria` y el diseño de `liquid-systems.html`.
+- [x] Definir el plan de implementación detallado.
+
+## Desarrollo UI (Onboarding)
+- [ ] Pantalla de bienvenida (Solicitar nombre).
+- [ ] Solicitar carga de una "Nota de ejemplo" (Opcional).
+- [ ] Simular extracción de elementos (Logo, Encabezado, Pie de página).
+
+## Desarrollo UI (Editor de Notas)
+- [x] Interfaz principal de redacción apoyada por el skill.
+- [x] Aplicar estilo visual de Liquid Systems.
+- [x] Implementar generación y previsualización de la nota.
+- [x] Implementar exportación a PDF y DOCX.
+
+## Adaptación a UNR (Guideon Admin)
+- [x] Cambiar nombre de Orion a Guideon y UNC a UNR (Rosario).
+- [x] Reemplazar campos múltiples por un único campo de texto de lenguaje natural.
+- [x] Simular procesamiento de IA para estructura automática de la nota.

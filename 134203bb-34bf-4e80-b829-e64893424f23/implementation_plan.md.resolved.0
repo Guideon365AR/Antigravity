@@ -1,0 +1,38 @@
+# Plan de Implementación: Asistente de Redacción Administrativa
+
+Esta aplicación web ayudará al usuario a redactar notas administrativas universitarias siguiendo las normativas de la UNC, con un diseño premium inspirado en [liquid-systems.html](file:///c:/Users/Gustavo/Desktop/ProQualis/Proyectos%20SRP/Agente%20Redacc%20Admin/liquid-systems.html).
+
+## Resumen del Proyecto
+Se construirá una Single Page Application (SPA) utilizando HTML5, Tailwind CSS, y JavaScript fluido (Vanilla JS). Se prioriza el aspecto visual con "glassmorphism", animaciones suaves, tipografía Inter y un estilo oscuro/claro equilibrado.
+
+## User Review Required
+> [!IMPORTANT]
+> Reviso a continuación el flujo y las tecnologías propuestas. Si está de acuerdo con este enfoque (Vanilla JS + HTML + Tailwind CDN), aprobaré el plan y procederé a codificar todo. ¿Desea que el "análisis" de la nota de ejemplo sea una simulación visual con resultados predeterminados, o prefiere algún nivel de procesamiento real del texto que ingrese el usuario?
+
+## Proposed Changes
+
+### Interfaz y Estilos Base
+#### [NEW] index.html
+Contendrá la estructura principal, cargando Tailwind por CDN, Iconify para íconos y Google Fonts (Inter). Contará con dos contenedores principales: `#onboarding-view` y `#main-app-view`.
+#### [NEW] styles.css
+Contendrá todas las clases CSS personalizadas para el *glassmorphism*, los fondos con gradientes sutiles y las animaciones (basado en el código extraído de [liquid-systems.html](file:///c:/Users/Gustavo/Desktop/ProQualis/Proyectos%20SRP/Agente%20Redacc%20Admin/liquid-systems.html)).
+#### [NEW] app.js
+Manejará la lógica de la aplicación:
+1. **Verificación de primera vez:** Revisará `localStorage`. Si es la primera vez, mostrará el Onboarding; si no, irá a la App Principal.
+2. **Flujo de Onboarding:** 
+   - Pantalla 1: Ingreso de Nombre.
+   - Pantalla 2: Subida de nota de ejemplo (input tipo file/texto).
+   - Pantalla 3: Simulación de análisis con loaders modernos.
+   - Pantalla 4: Confirmación de extracción (Logo, Encabezado, Pie de página).
+3. **Generador de Notas (App Principal):** Un formulario de entrada (Remitente, Destinatario, Motivo, Referencia) y un panel de vista previa de la nota estructurada en los 3 párrafos de la UNC (Planteo, Fundamentación, Cierre).
+
+## Verification Plan
+
+### Automated Tests
+Dado que es una aplicación frontend pura sin framework complejo, no se configurarán tests automatizados tipo Jest en esta iteración. Usaré un agente de navegador (Browser Subagent) para verificar que la página cargue correctamente sin errores en consola y que el flujo de Onboarding pase a la vista principal una vez completado.
+
+### Manual Verification
+1. El usuario abrirá el archivo `index.html` en su navegador.
+2. Se le presentará la pantalla de onboarding, donde ingresará su nombre y adjuntará un archivo.
+3. Se verificará visualmente la estética premium (efectos de cristal, animaciones).
+4. El usuario completará los campos en la vista del editor y verá la nota generada correctamente formateada.
