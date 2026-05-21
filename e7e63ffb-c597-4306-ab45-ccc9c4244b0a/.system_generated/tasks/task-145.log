@@ -1,0 +1,14 @@
+
+> gestion-movil-srp@1.0.0 ts:check
+> tsc
+
+src/screens/AbsenceHistoryScreen.tsx(429,5): error TS2345: Argument of type '{ header: { flexDirection: "row"; alignItems: "center"; paddingHorizontal: number; paddingVertical: number; borderBottomWidth: number; borderBottomColor: string; backgroundColor: string; }; ... 47 more ...; modalAnularBtn: { ...; }; }' is not assignable to parameter of type '{ header: { flexDirection: "row"; alignItems: "center"; paddingHorizontal: number; paddingVertical: number; borderBottomWidth: number; borderBottomColor: string; backgroundColor: string; }; ... 47 more ...; modalAnularBtn: { ...; }; } & NamedStyles<...>'.
+  Property 'htmlSelect' is incompatible with index signature.
+    Object literal may only specify known properties, and 'border' does not exist in type 'ViewStyle | TextStyle | ImageStyle'.
+src/screens/DashboardScreen.tsx(177,22): error TS18047: 'activeSection' is possibly 'null'.
+src/screens/NewAbsenceScreen.tsx(455,5): error TS2345: Argument of type '{ header: { flexDirection: "row"; alignItems: "center"; paddingHorizontal: number; paddingVertical: number; borderBottomWidth: number; borderBottomColor: string; backgroundColor: string; }; ... 33 more ...; confirmBtn: { ...; }; }' is not assignable to parameter of type '{ header: { flexDirection: "row"; alignItems: "center"; paddingHorizontal: number; paddingVertical: number; borderBottomWidth: number; borderBottomColor: string; backgroundColor: string; }; ... 33 more ...; confirmBtn: { ...; }; } & NamedStyles<...>'.
+  Property 'htmlSelect' is incompatible with index signature.
+    Object literal may only specify known properties, and 'border' does not exist in type 'ViewStyle | TextStyle | ImageStyle'.
+src/screens/SettingsScreen.tsx(293,5): error TS2345: Argument of type '{ header: { flexDirection: "row"; alignItems: "center"; paddingHorizontal: number; paddingVertical: number; borderBottomWidth: number; borderBottomColor: string; backgroundColor: string; }; ... 35 more ...; logoutBtn: { ...; }; }' is not assignable to parameter of type '{ header: { flexDirection: "row"; alignItems: "center"; paddingHorizontal: number; paddingVertical: number; borderBottomWidth: number; borderBottomColor: string; backgroundColor: string; }; ... 35 more ...; logoutBtn: { ...; }; } & NamedStyles<...>'.
+  Property 'selectInput' is incompatible with index signature.
+    Object literal may only specify known properties, and 'border' does not exist in type 'ViewStyle | TextStyle | ImageStyle'.
