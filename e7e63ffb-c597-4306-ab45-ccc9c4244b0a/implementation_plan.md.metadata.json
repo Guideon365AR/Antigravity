@@ -1,0 +1,6 @@
+{
+  "artifactType": "ARTIFACT_TYPE_IMPLEMENTATION_PLAN",
+  "summary": "Plan de implementación detallado para la aplicación móvil nativa 'Gestión Móvil SRP'. El plan describe la arquitectura offline-first, los componentes de la interfaz de usuario con estética premium, el flujo completo de 13 pantallas del MVP, el motor de sincronización offline con cola local, el simulador de conexión y el entorno de ejecución basado en Docker para Windows.",
+  "updatedAt": "2026-05-21T15:33:24.173523300Z",
+  "requestFeedback": true
+}
