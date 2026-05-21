@@ -1,0 +1,5 @@
+{
+  "artifactType": "ARTIFACT_TYPE_WALKTHROUGH",
+  "summary": "Walkthrough completo del MVP Gestión Móvil SRP Fase 1. Documenta la arquitectura técnica (React Native/Expo + Zustand + Docker), las 10 pantallas implementadas (SCR-01 a SCR-13), el motor offline-first SyncEngine con manejo de idempotencia HTTP 409 y reintentos HTTP 500, y una guía de verificación paso a paso. El TypeScript check pasa sin errores.",
+  "updatedAt": "2026-05-21T22:41:25.472461500Z"
+}

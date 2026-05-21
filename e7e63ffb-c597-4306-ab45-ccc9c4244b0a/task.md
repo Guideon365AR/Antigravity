@@ -1,35 +1,36 @@
 # Plan de Trabajo (Checklist de Tareas) - Gestión Móvil SRP
 
-- `[ ]` **Paso 1: Estructura del proyecto y archivos de configuración**
-  - `[ ]` Crear `package.json` con dependencias del entorno Expo y Zustand
-  - `[ ]` Crear `docker-compose.yml` para orquestación del contenedor Node
-  - `[ ]` Crear script de inicio rápido `run.bat` para Windows
-  - `[ ]` Crear `tsconfig.json` para soporte TypeScript
-  - `[ ]` Crear `App.tsx` como punto de entrada de la aplicación
-- `[ ]` **Paso 2: Sistema de Diseño Visual Premium (`src/theme/`)**
-  - `[ ]` Definir colores HSL premium (azul UNR, fondos darkmode, acentos de estado)
-  - `[ ]` Crear tokens de diseño y estilos de tarjetas esmeriladas (glassmorphism)
-- `[ ]` **Paso 3: Base de Datos Mock, Estado Zustand y Motor de Sincronización**
-  - `[ ]` Crear `src/services/mockData.ts` (13 secciones, personal de guardia, turnos base)
-  - `[ ]` Crear `src/store/appStore.ts` (estados de autenticación, sección seleccionada y turno activo)
-  - `[ ]` Crear `src/store/syncStore.ts` (cola de sincronización local `sync_queue` y bitácora de logs)
-  - `[ ]` Crear `src/services/syncEngine.ts` (procesador FIFO, soporte para ACK e idempotencia ante duplicados HTTP 409)
-- `[ ]` **Paso 4: Implementación de las Pantallas (SCR-01 a SCR-13)**
-  - `[ ]` SCR-01 Pantalla de Login (Estética premium y validación interactiva)
-  - `[ ]` SCR-02 Selector de Áreas (Rejilla de secciones asignadas al encargado)
-  - `[ ]` SCR-03 Inicio de Turno (Turn Start Screen - Bloqueo de app obligatorio hasta aprobación)
-  - `[ ]` SCR-03b Modificación de Equipo (Reasignación de objetivos matriciales, refuerzos y ausentes)
-  - `[ ]` SCR-04 Dashboard de Sección (Panel de control con barra de estado de red verde/amarillo/rojo)
-  - `[ ]` SCR-05 Nueva Inasistencia (Formulario guiado con lógica condicional por tipo)
-  - `[ ]` SCR-06 Confirmación de Registro (Resumen final antes de guardar localmente)
-  - `[ ]` SCR-07 Historial de Inasistencias (Últimos 30 días con filtros y estado de sync)
-  - `[ ]` SCR-08 Detalle de Inasistencia (Vista detallada del registro guardado)
-  - `[ ]` SCR-12 Nueva Novedad (Formulario obligatorio de reporte general)
-  - `[ ]` SCR-13 Historial de Novedades (Listado con indicador de ACK/reintentos)
-  - `[ ]` SCR-11 Ajustes y Panel del Simulador (Simulador de conectividad, forzador de latencia/errores y gestor de cola de sync)
-- `[ ]` **Paso 5: Verificación y Pruebas del MVP**
-  - `[ ]` Validar funcionamiento en entorno Docker / Web
-  - `[ ]` Probar transiciones y obligatoriedad del Turn Start Screen
-  - `[ ]` Verificar comportamiento offline: guardar sin red -> cola en amarillo -> persistencia local
-  - `[ ]` Verificar sincronización: activar red -> vaciado automático de cola -> barra en verde
-  - `[ ]` Verificar manejo de duplicados (HTTP 409) en el motor de sincronización
+- `[x]` **Paso 1: Estructura del proyecto y archivos de configuración**
+  - `[x]` Crear `package.json` con dependencias del entorno Expo y Zustand
+  - `[x]` Crear `docker-compose.yml` para orquestación del contenedor Node
+  - `[x]` Crear script de inicio rápido `run.bat` para Windows
+  - `[x]` Crear `tsconfig.json` para soporte TypeScript
+  - `[x]` Crear `App.tsx` como punto de entrada de la aplicación
+- `[x]` **Paso 2: Sistema de Diseño Visual Premium (`src/theme/`)**
+  - `[x]` Definir colores HSL premium (azul UNR, fondos darkmode, acentos de estado)
+  - `[x]` Crear tokens de diseño y estilos de tarjetas esmeriladas (glassmorphism)
+- `[x]` **Paso 3: Base de Datos Mock, Estado Zustand y Motor de Sincronización**
+  - `[x]` Crear `src/services/mockData.ts` (13 secciones, personal de guardia, turnos base)
+  - `[x]` Crear `src/store/appStore.ts` (estados de autenticación, sección seleccionada y turno activo)
+  - `[x]` Crear `src/store/syncStore.ts` (cola de sincronización local `sync_queue` y bitácora de logs)
+  - `[x]` Crear `src/services/syncEngine.ts` (procesador FIFO, soporte para ACK e idempotencia ante duplicados HTTP 409)
+- `[x]` **Paso 4: Implementación de las Pantallas (SCR-01 a SCR-13)**
+  - `[x]` SCR-01 Pantalla de Login (Estética premium y validación interactiva)
+  - `[x]` SCR-02 Selector de Áreas (Rejilla de secciones asignadas al encargado)
+  - `[x]` SCR-03 Inicio de Turno (Turn Start Screen - Bloqueo de app obligatorio hasta aprobación)
+  - `[x]` SCR-03b Modificación de Equipo (Reasignación de objetivos matriciales, refuerzos y ausentes)
+  - `[x]` SCR-04 Dashboard de Sección (Panel de control con barra de estado de red verde/amarillo/rojo)
+  - `[x]` SCR-05 Nueva Inasistencia (Formulario guiado con lógica condicional por tipo)
+  - `[x]` SCR-06 Confirmación de Registro (Resumen final antes de guardar localmente)
+  - `[x]` SCR-07 Historial de Inasistencias (Últimos 30 días con filtros y estado de sync)
+  - `[x]` SCR-08 Detalle de Inasistencia (Vista detallada del registro guardado)
+  - `[x]` SCR-12 Nueva Novedad (Formulario obligatorio de reporte general)
+  - `[x]` SCR-13 Historial de Novedades (Listado con indicador de ACK/reintentos)
+  - `[x]` SCR-11 Ajustes y Panel del Simulador (Simulador de conectividad, forzador de latencia/errores y gestor de cola de sync)
+- `[x]` **Paso 5: Verificación y Pruebas del MVP**
+  - `[x]` Validar compilación TypeScript sin errores (`npm run ts:check` → 0 errores)
+  - `[x]` Validar funcionamiento en entorno Docker / Web (Metro en puerto 8081)
+  - `[x]` Probar transiciones y obligatoriedad del Turn Start Screen
+  - `[x]` Verificar comportamiento offline: guardar sin red → cola en amarillo → persistencia local
+  - `[x]` Verificar sincronización: activar red → vaciado automático de cola → barra en verde
+  - `[x]` Verificar manejo de duplicados (HTTP 409) en el motor de sincronización
