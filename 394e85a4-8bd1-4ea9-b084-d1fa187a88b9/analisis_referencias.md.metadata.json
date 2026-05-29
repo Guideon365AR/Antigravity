@@ -1,0 +1,6 @@
+{
+  "artifactType":  "ARTIFACT_TYPE_OTHER",
+  "summary":  "Análisis exhaustivo y forense de las referencias bibliográficas y enlaces del paper del usuario. Identifica alucinaciones totales, metadatos cruzados (mashups), DOIs erróneos que dirigen a artículos ajenos (como obstetricia o pedagogía musical), omisiones y referencias correctas.",
+  "updatedAt":  "2026-05-29T01:35:01.803317200Z",
+  "requestFeedback":  true
+}

@@ -1,0 +1,5 @@
+{
+  "artifactType":  "ARTIFACT_TYPE_OTHER",
+  "summary":  "Scratch script to test content replacement in pypdf without calling decompress_content_streams",
+  "updatedAt":  "2026-05-29T01:44:02.460464700Z"
+}

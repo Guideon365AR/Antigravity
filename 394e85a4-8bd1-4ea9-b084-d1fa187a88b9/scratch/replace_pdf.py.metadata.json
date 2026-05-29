@@ -1,0 +1,5 @@
+{
+  "artifactType":  "ARTIFACT_TYPE_OTHER",
+  "summary":  "Scratch script to perform the search and replace inside the PDF files using pypdf to decompress content streams and replace text, keeping the exact same length string so offsets are intact",
+  "updatedAt":  "2026-05-29T01:43:03.238290300Z"
+}
