@@ -21093,3 +21093,76 @@ Proceso finalizado.
 Fin de la transcripción de Windows PowerShell
 Hora de finalización: 20260602120201
 **********************
+**********************
+Inicio de la transcripción de Windows PowerShell
+Hora de inicio: 20260602120401
+Nombre de usuario: GUIDEONOVO\Gustavo
+Usuario RunAs: GUIDEONOVO\Gustavo
+Nombre de la configuración: 
+Máquina: GUIDEONOVO (Microsoft Windows NT 10.0.19045.0)
+Aplicación host: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -WindowStyle Hidden -File C:\Users\Gustavo\.gemini\antigravity\brain\sync_brain.ps1
+Id. de proceso: 3856
+PSVersion: 5.1.19041.7291
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.7291
+BuildVersion: 10.0.19041.7291
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+La transcripción ha comenzado. El archivo de salida es C:\Users\Gustavo\.gemini\antigravity\brain\sync_log.txt
+Iniciando sincronizaciÃ³n del Cerebro en: C:\Users\Gustavo\.gemini\antigravity\brain
+1. Descargando cambios remotos (git pull)...
+From https://github.com/Guideon365AR/Antigravity
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+2. Agregando cambios locales...
+
+3. Confirmando cambios...
+[main 2adf79c] Auto-sync: 2026-06-02 12:04:01
+ 1 file changed, 73 insertions(+)
+4. Subiendo cambios a GitHub (git push)...
+Enumerating objects: 231, done.
+Counting objects: 100% (231/231), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (205/205), done.
+Writing objects: 100% (229/229), 1.18 MiB | 909.00 KiB/s, done.
+Total 229 (delta 107), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (107/107), completed with 2 local objects.
+remote: error: GH013: Repository rule violations found for refs/heads/main.
+remote:
+remote: - GITHUB PUSH PROTECTION
+remote:   —————————————————————————————————————————
+remote:     Resolve the following violations before pushing again
+remote:
+remote:     - Push cannot contain secrets
+remote:
+remote:
+remote:      (?) Learn how to resolve a blocked push
+remote:      https://docs.github.com/code-security/secret-scanning/working-with-secret-scanning-and-push-protection/work
+ing-with-push-protection-from-the-command-line#resolving-a-blocked-push
+remote:
+remote:
+remote:       —— GitHub Personal Access Token ——————————————————————
+remote:        locations:
+remote:          - commit: d1f544c3477885aa5bd71dbd3945611adc87b820
+remote:            path: c54d51de-bb0e-4111-92ef-9788aeda881a/.system_generated/logs/transcript.jsonl:21
+remote:          - commit: d1f544c3477885aa5bd71dbd3945611adc87b820
+remote:            path: c54d51de-bb0e-4111-92ef-9788aeda881a/.system_generated/logs/transcript.jsonl:24
+remote:
+remote:        (?) To push, remove secret from commit(s) or follow this URL to allow the secret.
+remote:        https://github.com/Guideon365AR/Antigravity/security/secret-scanning/unblock-secret/3EaN39noZquBkZHHqVwWn
+JjmJBu
+remote:
+remote:
+remote:
+To https://github.com/Guideon365AR/Antigravity.git
+ ! [remote rejected] main -> main (push declined due to repository rule violations)
+error: failed to push some refs to 'https://github.com/Guideon365AR/Antigravity.git'
+Error al subir los cambios.
+Proceso finalizado.
+**********************
+Fin de la transcripción de Windows PowerShell
+Hora de finalización: 20260602120414
+**********************
